@@ -1,0 +1,6 @@
+"Field","Description","Required"
+"See attachment","Check this box to enable the *Add Attachment * functionality.","No"
+"SAS AD group","Name of the Active Directory group in the SAS operational unit","No"
+"New","Triggers IT to create a new AD group in the SAS OU","No"
+"Member","User(s) or AD groups to perform the indicated action on","No"
+"Action","Add or removed the specified user(s) or group from the AD group to modify","No"

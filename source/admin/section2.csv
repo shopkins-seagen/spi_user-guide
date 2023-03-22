@@ -1,0 +1,7 @@
+Field,Description,Required
+See Attachment,Check this box to enable the *Add Attachment * functionality. Use an attachment to manage multiple groups/members. ,No
+Folder,Full path of the folder to be modified. The last element in the path will be the folder acted on in the case of inheritance modifications,Yes
+Action,"Specifies the action to perform on the specified folder. For lock and unlock actions, the user does not have to specify any groups.  For Special Permissions, inputs to additional fields are required.",Yes
+For Special Permission only:,,
+Group*n*,Name of the existing AD group to apply the changes for the specified folder.  Up to 4 group's permission can be specified in the request form. ,Yes
+Permission*n*,Indicates what action to take with respect to the specified group.,Yes

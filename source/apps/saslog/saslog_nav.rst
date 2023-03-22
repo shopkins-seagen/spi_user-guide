@@ -1,0 +1,2 @@
+
+.. |ss| image:: excel.png

@@ -1,0 +1,8 @@
+Field,Description,Required
+See Attachment,Check this box to enable the *Add Attachment * functionality. Use an attachment to manage multiple groups/members. ,No
+User,"Name of existing user apply to the actions in the group section, 1 user per field, up to 4 users aloowed by the form.  If the request include more than 4 users, use the optional template instead and attach to the request. ",Yes
+New User,"Checkbox to create new user.  When checked, a 'User Name' field will apear to allow the user's name to be entered.",No
+Action,Adding or removing user from specified group.,No
+New Group,"Checkbox to create a new AD group. When checked, a 'Group Name' field will apear to allow the group name to be entered.",No
+Group,Name of the existing AD group to apply changes for,Yes
+Additional Information,Additional information on the request,No

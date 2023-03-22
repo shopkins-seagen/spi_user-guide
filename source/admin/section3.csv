@@ -1,0 +1,5 @@
+Field,Description,Required
+Folder path,Full path of the folder to be restored. Multiple folders can be specified here.,Yes
+Filename,All objects under the folder specified above will be restored by default.  Use this text box to specify if only certain files need to be restored.,No
+Date/version to Restore From,Date/version to Restore From,Yes
+Additional Information,,No

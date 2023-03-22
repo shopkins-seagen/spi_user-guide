@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<!--SAS Enterprise Guide Application Options-->
+<Options>
+    <addOutputDataToProjectTree>false</addOutputDataToProjectTree>
+    <autoDisplayGenDataOrResults>true</autoDisplayGenDataOrResults>
+    <autoexecFlowAutomatic>false</autoexecFlowAutomatic>
+    <autoUpdateCheckForUpdates>false</autoUpdateCheckForUpdates>
+    <autoUpdateSkipThisVersion>7.100.5.6226</autoUpdateSkipThisVersion>
+    <bAllowAutoJoin>true</bAllowAutoJoin>
+    <bAutoAddColumnsToResult>false</bAutoAddColumnsToResult>
+    <bAutoApplySummaryFormats>true</bAutoApplySummaryFormats>
+    <bAutoColumnValuesToSASValues>false</bAutoColumnValuesToSASValues>
+    <bAutoDisplayData>true</bAutoDisplayData>
+    <bAutoImportDataWhenAddedToProject>true</bAutoImportDataWhenAddedToProject>
+    <bAutoSurroundQueryExpressionsInParentheses>false</bAutoSurroundQueryExpressionsInParentheses>
+    <bAutoTempDataSave>true</bAutoTempDataSave>
+    <bAutoValidateQuery>true</bAutoValidateQuery>
+    <bCloseAllDataBeforeRunCode>true</bCloseAllDataBeforeRunCode>
+    <bConnectToGridOnServerConnect>false</bConnectToGridOnServerConnect>
+    <bDisplayColumnAlphaOrder>false</bDisplayColumnAlphaOrder>
+    <bDisplayPerfWarnings>true</bDisplayPerfWarnings>
+    <bDisplaySASStudioTasks>false</bDisplaySASStudioTasks>
+    <bEnableAccessibilityFeatures>false</bEnableAccessibilityFeatures>
+    <bFormatDataLocally>false</bFormatDataLocally>
+    <bInsertAfterStpEndCode>false</bInsertAfterStpEndCode>
+    <bInsertBeforeStpBeginCode>false</bInsertBeforeStpBeginCode>
+    <bInsertSASCodeAfterCode>true</bInsertSASCodeAfterCode>
+    <bInsertSASCodeAfterTask>false</bInsertSASCodeAfterTask>
+    <bInsertSASCodeBeforeCode>true</bInsertSASCodeBeforeCode>
+    <bInsertSASCodeBeforeTask>false</bInsertSASCodeBeforeTask>
+    <bInsertSASCodeOnServerConnect>false</bInsertSASCodeOnServerConnect>
+    <bOpenExistingDataUnprotected>false</bOpenExistingDataUnprotected>
+    <bOpenWithDataExplorerDefault>false</bOpenWithDataExplorerDefault>
+    <bRDBMSRecCount>false</bRDBMSRecCount>
+    <bScanColumnForWidth>true</bScanColumnForWidth>
+    <bShowColAsLabels>false</bShowColAsLabels>
+    <bTaskProcTitle>true</bTaskProcTitle>
+    <bTaskSortUseProcSQL>false</bTaskSortUseProcSQL>
+    <bUseMaxDistinctColumnCount>true</bUseMaxDistinctColumnCount>
+    <bViewWrapperCode>false</bViewWrapperCode>
+    <credentialPersistMode>Session</credentialPersistMode>
+    <credentialsNoPlainText>true</credentialsNoPlainText>
+    <credentialsRemoveFromLog>true</credentialsRemoveFromLog>
+    <cultureName>en</cultureName>
+    <defaultResultFormat>HTML</defaultResultFormat>
+    <displayLog>true</displayLog>
+    <enableDataAccessorTimeout>true</enableDataAccessorTimeout>
+    <enableHardwareRendering>true</enableHardwareRendering>
+    <enableProjectLogForNewProjects>false</enableProjectLogForNewProjects>
+    <eQueryOutputType>Table</eQueryOutputType>
+    <excelAuthor>
+    </excelAuthor>
+    <excelAutofilter>
+    </excelAutofilter>
+    <excelCategory>
+    </excelCategory>
+    <excelComments>
+    </excelComments>
+    <excelEmbeddedFootnotes>false</excelEmbeddedFootnotes>
+    <excelEmbeddedTitles>false</excelEmbeddedTitles>
+    <excelExtraOptions>
+    </excelExtraOptions>
+    <excelExtraTagsetOptions>
+    </excelExtraTagsetOptions>
+    <excelFrozenHeaders>
+    </excelFrozenHeaders>
+    <excelFrozenRowHeaders>
+    </excelFrozenRowHeaders>
+    <excelGenerate>false</excelGenerate>
+    <excelKeywords>
+    </excelKeywords>
+    <excelPrintFooter>
+    </excelPrintFooter>
+    <excelPrintHeader>
+    </excelPrintHeader>
+    <excelRowbreakInterval>None</excelRowbreakInterval>
+    <excelSheetInterval>Table</excelSheetInterval>
+    <excelSheetName>
+    </excelSheetName>
+    <excelStartAt>
+    </excelStartAt>
+    <excelStatus>
+    </excelStatus>
+    <excelStyle>Excel</excelStyle>
+    <excelTitle>
+    </excelTitle>
+    <fileExtensionsToOpenAsText>asc, bat, c, cc, cfg, cmd, cnf, cgi, conf, config, cpp, csv, cs, cxx, diff, h, hpp, hxx, iml, ini, java, json, jsp, ksh, log, m, php, pl, pm, ps1, py, r, reg, sh, tab, tsv, txt, text, vbs, xml, yaml</fileExtensionsToOpenAsText>
+    <fileHistoryCommitWithSave>false</fileHistoryCommitWithSave>
+    <fileHistoryCustomDiffToolEnabled>false</fileHistoryCustomDiffToolEnabled>
+    <fileHistoryDiffToolCmd>
+    </fileHistoryDiffToolCmd>
+    <fileHistoryDiffToolComboSelection>WinMerge</fileHistoryDiffToolComboSelection>
+    <fileHistoryEmail>
+    </fileHistoryEmail>
+    <fileHistoryEnabled>true</fileHistoryEnabled>
+    <fileHistoryPathToDiffTool>C:\Program Files (x86)\WinMerge\WinMergeU.exe</fileHistoryPathToDiffTool>
+    <fileHistoryPathToGit>
+    </fileHistoryPathToGit>
+    <fileHistoryUser>
+    </fileHistoryUser>
+    <filterUnusedVariables>Auto</filterUnusedVariables>
+    <fullDetailsInFOD>false</fullDetailsInFOD>
+    <graphAccessible>true</graphAccessible>
+    <graphActiveXUrl>http://www2.sas.com/codebase/graph/v94/sasgraph.exe#version=9,4</graphActiveXUrl>
+    <graphAutosize>true</graphAutosize>
+    <graphDevice>Png</graphDevice>
+    <graphDeviceTasks>ActiveX</graphDeviceTasks>
+    <graphFootnote>false</graphFootnote>
+    <graphHeight>360</graphHeight>
+    <graphJavaUrl>http://www2.sas.com/codebase/graph/v94</graphJavaUrl>
+    <graphSuppressGraphOptionStatement>false</graphSuppressGraphOptionStatement>
+    <graphTitle>false</graphTitle>
+    <graphWidth>480</graphWidth>
+    <gridTimeoutValue>30</gridTimeoutValue>
+    <htmlExtraOptions>
+    </htmlExtraOptions>
+    <htmlGenerate>true</htmlGenerate>
+    <htmlNewFile>None</htmlNewFile>
+    <htmlPreferredViewerPath>
+    </htmlPreferredViewerPath>
+    <htmlStream>false</htmlStream>
+    <htmlStyleCategory>BuiltIn</htmlStyleCategory>
+    <htmlStyleName>HTMLBlue</htmlStyleName>
+    <htmlStyleUrl>C:\Program Files\SASHome\SASEnterpriseGuide\7.1\Styles\HTMLBlue.css</htmlStyleUrl>
+    <htmlTranslationTable>Utf8</htmlTranslationTable>
+    <htmlViewer>Internal</htmlViewer>
+    <lineSize>0</lineSize>
+    <maxMRUItems>6</maxMRUItems>
+    <maxOutputDatasets>50</maxOutputDatasets>
+    <nAccessRowLimit>10000</nAccessRowLimit>
+    <nAliasLength>32</nAliasLength>
+    <nDistinctColumnCount>250</nDistinctColumnCount>
+    <nImportLookAheadRows>-1</nImportLookAheadRows>
+    <nMaxDistinctColumnCount>100000</nMaxDistinctColumnCount>
+    <nNewDataDefaultColumns>6</nNewDataDefaultColumns>
+    <nNewDataDefaultRows>12</nNewDataDefaultRows>
+    <nRowDisplayCount>25</nRowDisplayCount>
+    <nRowInputCount>1000</nRowInputCount>
+    <olapFrameProperties>&lt;FrameProperties Ver="7.1"&gt;&lt;ViewerSynchronization&gt;Synchronized&lt;/ViewerSynchronization&gt;&lt;RolesSection&gt;Expanded&lt;/RolesSection&gt;&lt;PerformanceMaxRowsColumnsToProcess&gt;10000&lt;/PerformanceMaxRowsColumnsToProcess&gt;&lt;PerformanceNumRowsColumnsToRetrieve&gt;100&lt;/PerformanceNumRowsColumnsToRetrieve&gt;&lt;RowsColumnsShowAll&gt;true&lt;/RowsColumnsShowAll&gt;&lt;DrillThroughMaxRowsToInclude&gt;100&lt;/DrillThroughMaxRowsToInclude&gt;&lt;DrillThroughInsertAsObject&gt;false&lt;/DrillThroughInsertAsObject&gt;&lt;SliceReplacePrevious&gt;false&lt;/SliceReplacePrevious&gt;&lt;SliceType&gt;Slice&lt;/SliceType&gt;&lt;NumberOfRowsToScan&gt;500&lt;/NumberOfRowsToScan&gt;&lt;StylesShowShadings&gt;true&lt;/StylesShowShadings&gt;&lt;FilterExampleVisible&gt;false&lt;/FilterExampleVisible&gt;&lt;StylesTheme&gt;&lt;Styles Version="1" CurrentStyle="DefaultOlapStyle"&gt;&lt;CustomStyle&gt;&lt;ViewerStyle Version="1" Name="CustomStyle" Default="false"&gt;&lt;GridViewerStyle GridLineColor="178, 178, 178" GridFrameColor="127, 157, 185" UseGradient="false"&gt;&lt;AxisTotals BackColor="247, 247, 247" TextColor="Black" UseGradient="false" /&gt;&lt;Row BackColor="227, 235, 244" TextColor="Black" LinkColor="51, 51, 153" UseGradient="true"&gt;&lt;Gradient MaximumDepth="10" IntensityStep="0.05" InverseTextColor="White" /&gt;&lt;AxisTotals UseGradient="false" /&gt;&lt;/Row&gt;&lt;Column BackColor="235, 243, 235" TextColor="Black" LinkColor="51, 51, 153" UseGradient="true"&gt;&lt;Gradient MaximumDepth="10" IntensityStep="0.05" InverseTextColor="White" /&gt;&lt;AxisTotals UseGradient="false" /&gt;&lt;/Column&gt;&lt;Measure BackColor="255, 248, 227" TextColor="Black" LinkColor="51, 51, 153" UseGradient="false"&gt;&lt;AxisTotals UseGradient="false" /&gt;&lt;/Measure&gt;&lt;Data BackColor="White" TextColor="Black" LinkColor="51, 51, 153" UseGradient="false"&gt;&lt;Totals BackColor="247, 247, 247" TextColor="Black" UseGradient="false" /&gt;&lt;AxisTotals UseGradient="false" /&gt;&lt;/Data&gt;&lt;/GridViewerStyle&gt;&lt;GraphViewerStyle StyleName="EG_OLAP" /&gt;&lt;/ViewerStyle&gt;&lt;/CustomStyle&gt;&lt;/Styles&gt;&lt;/StylesTheme&gt;&lt;/FrameProperties&gt;</olapFrameProperties>
+    <olapOpenWithOptionsAlways>false</olapOpenWithOptionsAlways>
+    <olapViewProperties>&lt;ViewerProperties Ver="1"&gt;&lt;RawValuesShowRawValues&gt;true&lt;/RawValuesShowRawValues&gt;&lt;RawValuesShowUniqueMemberID&gt;false&lt;/RawValuesShowUniqueMemberID&gt;&lt;RowsColumnsShowRows&gt;true&lt;/RowsColumnsShowRows&gt;&lt;RowsColumnsShowColumns&gt;true&lt;/RowsColumnsShowColumns&gt;&lt;AddCalculatedMembers&gt;false&lt;/AddCalculatedMembers&gt;&lt;TotalsShowOn&gt;After&lt;/TotalsShowOn&gt;&lt;TotalsShow&gt;Parent&lt;/TotalsShow&gt;&lt;TotalsShowAllCombos&gt;All&lt;/TotalsShowAllCombos&gt;&lt;GraphType&gt;Intelligent&lt;/GraphType&gt;&lt;GraphGroupType&gt;ByRows&lt;/GraphGroupType&gt;&lt;GraphPlacementType&gt;GroupsOnCategoryAxis&lt;/GraphPlacementType&gt;&lt;IsIntelligentChart&gt;true&lt;/IsIntelligentChart&gt;&lt;/ViewerProperties&gt;</olapViewProperties>
+    <openImportableDataAction>Import</openImportableDataAction>
+    <outputDataLibraryList>EGTASK,GRIDWORK,WORK,SASUSER</outputDataLibraryList>
+    <pageSize>0</pageSize>
+    <pdfAccessible>false</pdfAccessible>
+    <pdfAuthor>
+    </pdfAuthor>
+    <pdfColor>true</pdfColor>
+    <pdfColumns>1</pdfColumns>
+    <pdfExtraOptions>
+    </pdfExtraOptions>
+    <pdfGenerate>false</pdfGenerate>
+    <pdfKeywords>
+    </pdfKeywords>
+    <pdfNoToc>false</pdfNoToc>
+    <pdfPreferredViewerPath>
+    </pdfPreferredViewerPath>
+    <pdfStyle>Pearl</pdfStyle>
+    <pdfSubject>
+    </pdfSubject>
+    <pdfTitle>
+    </pdfTitle>
+    <pdfViewer>System</pdfViewer>
+    <pfdAllowMouseClickEdit>true</pfdAllowMouseClickEdit>
+    <pfdDisplayDataPath>false</pfdDisplayDataPath>
+    <pfdShowCode>false</pfdShowCode>
+    <pfdShowGeneratedResults>true</pfdShowGeneratedResults>
+    <pfdShowLog>false</pfdShowLog>
+    <powerpointAuthor>
+    </powerpointAuthor>
+    <powerpointCategory>
+    </powerpointCategory>
+    <powerpointComments>
+    </powerpointComments>
+    <powerpointExtraOptions>
+    </powerpointExtraOptions>
+    <powerpointGenerate>false</powerpointGenerate>
+    <powerpointKeywords>
+    </powerpointKeywords>
+    <powerpointStatus>
+    </powerpointStatus>
+    <powerpointStyle>PowerPointLight</powerpointStyle>
+    <powerpointTitle>
+    </powerpointTitle>
+    <prjAllowMouseClickEdit>true</prjAllowMouseClickEdit>
+    <prjDisplayDataPath>false</prjDisplayDataPath>
+    <prjTreeShowGeneratedResults>true</prjTreeShowGeneratedResults>
+    <prjUseSubContainers>true</prjUseSubContainers>
+    <projectNameInSaveAs>false</projectNameInSaveAs>
+    <projectRecoveryEnabled>true</projectRecoveryEnabled>
+    <projectRecoveryInterval>30</projectRecoveryInterval>
+    <projectRecoveryPath>%appdata%\SAS\EnterpriseGuide\7.1\ProjectRecovery</projectRecoveryPath>
+    <projectRecoveryUpdateLinked>true</projectRecoveryUpdateLinked>
+    <replaceResults>Replace</replaceResults>
+    <resultsLinkHandcode>true</resultsLinkHandcode>
+    <resultsSizeThreshold>5</resultsSizeThreshold>
+    <rtfAuthor>
+    </rtfAuthor>
+    <rtfColumns>1</rtfColumns>
+    <rtfExtraOptions>
+    </rtfExtraOptions>
+    <rtfGenerate>false</rtfGenerate>
+    <rtfKeepN>false</rtfKeepN>
+    <rtfNewFile>None</rtfNewFile>
+    <rtfPreferredViewerPath>
+    </rtfPreferredViewerPath>
+    <rtfStyle>Rtf</rtfStyle>
+    <rtfTitle>
+    </rtfTitle>
+    <rtfTranslationTable>Utf8</rtfTranslationTable>
+    <rtfUseWebBrowser>true</rtfUseWebBrowser>
+    <rtfViewer>System</rtfViewer>
+    <sasReportExtraOptions>
+    </sasReportExtraOptions>
+    <sasReportGenerate>false</sasReportGenerate>
+    <sasReportPreferredViewerPath>
+    </sasReportPreferredViewerPath>
+    <sasReportStyleCategory>BuiltIn</sasReportStyleCategory>
+    <sasReportStyleName>HTMLBlue</sasReportStyleName>
+    <sasReportStyleUrl>C:\Program Files\SASHome\SASEnterpriseGuide\7.1\Styles\HTMLBlue.css</sasReportStyleUrl>
+    <sasReportViewer>Internal</sasReportViewer>
+    <sasStudioEdition>Enterprise</sasStudioEdition>
+    <sasStudioVersion>0</sasStudioVersion>
+    <serverLocaleMode>MatchApplicationLanguage</serverLocaleMode>
+    <showGeneratedWrapperCodeInLog>true</showGeneratedWrapperCodeInLog>
+    <showOutput>false</showOutput>
+    <showWarningIcon>true</showWarningIcon>
+    <showWelcomeScreen>false</showWelcomeScreen>
+    <smtpAccountName>
+    </smtpAccountName>
+    <smtpAuthentication>Anonymous</smtpAuthentication>
+    <smtpMachine>
+    </smtpMachine>
+    <smtpPort>25</smtpPort>
+    <smtpSenderAddress>
+    </smtpSenderAddress>
+    <smtpUsername>
+    </smtpUsername>
+    <storedProcessOdsDestination>Report</storedProcessOdsDestination>
+    <storedProcessUIDefaults>
+    </storedProcessUIDefaults>
+    <strAfterCodeSASCode>/* Insert custom code after submitted code here */
+proc printto;
+run;
+
+data _null_;
+    infile logfile;
+    input;
+    putlog _infile_;  
+run;
+
+filename logfilex temp;
+
+proc printto log=logfilex new;
+run;
+
+%macro _Check;
+    data _log;
+        infile logfile delimiter='00'x MISSOVER DSD lrecl=32767;
+        firstobs=1;
+        format logtext $500.;
+        input  logtext $ ;
+        putlog _infile_;  
+    run;
+
+    data _checklog;
+        set _log;
+        if index(upcase(logtext),'MERROR')^=0 then delete;
+        if index(upcase(logtext),'MERGENOBY=ERROR')^=0 then delete;
+        if index(logtext,'index(upcase(logtext),')^=0 then delete;
+
+        length key $50.;    
+        if logtext=:'ERROR' then key='Error';
+        else if logtext=:'WARNING' then key='Warning';
+        else if upcase(logtext)=:'INFO: THE VARIABLE' then key='Info: the variable';
+        else if upcase(logtext)=:'NOTE: CHARACTER' then key='Character';
+        else if upcase(logtext)=:'NOTE: NUMERIC' then key='Numeric';
+        else if upcase(logtext)=:'NOTE: AT LEAST' then key='At least';
+        else if upcase(logtext)=:'NOTE: DIVISION' then key='Division';
+        else if upcase(logtext)=:'NOTE: MATHEMATICAL' then key='Mathematical';
+        else if upcase(logtext)=:'NOTE: MERGE' then key='Merge';
+        else if upcase(logtext)=:'NOTE: MISSING' then key='Missing';
+        else if upcase(logtext)=:'NOTE: NOSPOOL' then key='Nopool';
+        else if upcase(logtext)=:'NOTE: VARIABLE' then key='Note: Variable';
+        else if upcase(logtext)=:'NOTICE:' then key='Notice';
+        else if index(upcase(logtext),'INVALID')^=0 then key='Invalid';
+        else if index(upcase(logtext),'UNINI')^=0 then key='Uninitialized'; 
+        else if index(upcase(logtext),'OUTSIDE THE AXIS RANGE')^=0 then key='Outside';
+        else if index(upcase(logtext),'REACHED PAST THE END OF A LINE')^=0 then key='End';
+        else if index(upcase(logtext),'ONE OR MORE LINES WERE TRUNCATED')^=0 then key='Truncated';
+        else if index(upcase(logtext),'NOT POSITIVE DEFINITE')^=0 then key='Not positive definite';
+        else if index(upcase(logtext),'QUERY REQUIRES REMERGING')^=0 then key='Query requires remerging';
+        else if index(upcase(logtext),'CARTESIAN PRODUCT JOINS THAT CAN NOT BE OPTIMIZED')^=0 then key='Cartesian product joins';
+        else if index(upcase(logtext),'DONTDO')^=0 then key='Dontdo';
+        else if index(upcase(logtext),'FATAL:')^=0 then key='FATAL:';
+        else if index(upcase(logtext),'MEANING OF AN IDENTIFIER')^=0 then key='MEANING';
+        else if index(upcase(logtext),'COULD NOT BE FOUND OR LOADED')^=0 then key='Could not';        
+
+        if key^='';
+
+        blank='';
+        n1=_n_;
+    run;
+
+    data _NULL_;
+        if 0 then set _checklog nobs=n;
+        call symputx('nrows',n);
+        stop;
+    run;
+
+    title;
+        
+    %if &amp;nrows=0 %then %do;
+        data _checklog;
+            logtext="  ";
+        run;
+
+        proc report data=_checklog nocenter split='|' nowd missing spacing=0;
+            column (logtext);
+            define logtext / display " " width=86 flow left spacing=0;
+            title3 color=blue "  &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; CONGRATULATIONS!! NO PROBLEMS WERE FOUND in &amp;_CLIENTTASKLABEL &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; ";
+        run;
+    %end;
+
+    %else %do;
+         proc report data=_checklog headline nocenter split='|' nowd missing spacing=0;
+         column (n1 blank key logtext);
+         define n1     / order noprint;
+         define blank   / display " " width=3 flow left spacing=0;
+         define key     / display "Key Message" width=20 flow left spacing=0;
+         define logtext / display "Log Message" width=86 flow left spacing=0;
+         break before n1/skip;
+         title3 color=RED "  &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; THE FOLLOWING PROBLEMS WERE FOUND IN &amp;_CLIENTTASKLABEL &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; ";
+         run;
+    %end;
+
+    proc sql;
+        drop table _log, _checklog;
+    quit;
+
+    title; 
+
+%mend _Check;
+
+%_Check;
+
+proc printto log=log;  
+run;
+
+** reset syscc to 0;
+%let syscc=0;</strAfterCodeSASCode>
+    <strAfterStpEndSASCode>/* Insert custom code executed after STPEND macro */</strAfterStpEndSASCode>
+    <strAfterTaskSASCode>/* Insert custom code after task code here */</strAfterTaskSASCode>
+    <strBeforeCodeSASCode>/* Insert custom code before submitted code here */
+filename LogFile temp;
+Proc printto log=LogFile new;
+run;
+</strBeforeCodeSASCode>
+    <strBeforeStpBeginSASCode>/* Insert custom code executed before STPBEGIN macro */</strBeforeStpBeginSASCode>
+    <strBeforeTaskSASCode>/* Insert custom code before task code here */</strBeforeTaskSASCode>
+    <strOnServerConnectSASCode>/* Insert custom code after server connection here */</strOnServerConnectSASCode>
+    <strTaskDefaultFootnote>Generated by the SAS System (&amp;_SASSERVERNAME, &amp;SYSSCPL) on %TRIM(%QSYSFUNC(DATE(), NLDATE20.)) at %TRIM(%SYSFUNC(TIME(), TIMEAMPM12.))</strTaskDefaultFootnote>
+    <strTaskDefaultTitle>
+    </strTaskDefaultTitle>
+    <strTextureMapLoc>C:\Program Files\SASHome\Images</strTextureMapLoc>
+    <transferMode>Binary</transferMode>
+    <validMemName>EXTEND</validMemName>
+    <validVarName>V7</validVarName>
+</Options>
