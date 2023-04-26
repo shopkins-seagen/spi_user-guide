@@ -1,10 +1,9 @@
 .. include:: nav.rst
 
-Commandline Flags Quick Reference
+Command Line Flags 
 =======================================
-The table below lists the flags available and the possible values. Default values are indicated in bold blue font. If a flag has a default, it is optional. The only 
-required parameter is either -c, a CSV file that lists the programs to run, or -p a space-delimited list of programs (or logs if -o true). For comprehensive descriptions of 
-each option, see `Functionality and Options <interfaces.html#functionality-and-options>`__ .
+The table below lists the flags available and the possible values. Default values are indicated in bold font. If a flag has a default, it is optional and does not have 
+to be specified. Hover over the value in Option column to link to additional details if available. 
 
 .. raw:: html 
 
@@ -17,39 +16,50 @@ each option, see `Functionality and Options <interfaces.html#functionality-and-o
             .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00496B; border-left: 1px solid #E1EEF4;font-size: 12px;font-weight: normal; }
             .datagrid table tbody .alt td { background: #E1EEF4; color: #00496B; }.datagrid table tbody td:first-child { border-left: none; }
             .datagrid table tbody tr:last-child td { border-bottom: none; }
-            .dft {color:blue;font-weight:bold;}
+            .dft {font-weight:bold;}
+            .flag {color:blue;font-style:italic;}
         </style>
-            <div ><table>
-            <thead><tr><th>Flag</th><th>Option</th><th>Values</th></tr></thead>
+            <div><table>
+            <thead><tr><th>CLI Flag</th><th>Option</th><th>Description</th><th>Values</th></tr></thead>
             <tbody>
             <tr>
-                <td>-a</td><td>Run programs in parallel</td><td><ul><li class="dft">true</><li>false</li></ul></td></tr>
-            <tr class="alt">
-                <td>-b</td><td>Select best server</td><td><ul><li class="dft">true</><li>false</li></ul></td></tr>
+                <td>-a</td><td><a href="function.html#select-run-mode" title="See details"><span class="flag">Run Mode</span></a></td><td>Submit programs in parallel or sequentially</td><td><ul><li class="dft">true (parallel)</><li>false</li></ul></td>
+            </tr>
             <tr>
-                <td>-c</td><td>[path]\[CSV file]</td><td></td></tr>
-            <tr class="alt">
-                <td>-i</td><td>Interactive</td><td><ul><li class="dft">true</><li>false</li></ul></td></tr>
+                <td>-s</td><td><a href="function.html#select-server-and-server-context" title="See details"><span class="flag">Server</span></a></td><td>SAS application server to run programs</td><td><ul><li class="dft">best</><li>sgsasv1.sg.seagen.com</li><li>sgsasv1-stg.sg.seagen.com</li></ul></td>
+            </tr>
             <tr>
-                <td>-l</td><td>Review logs</td><td><ul><li class="dft">true</><li>false</li></ul></td></tr>
-            <tr class="alt">
-                <td>-m</td><td>Record macros</td><td><ul><li class="dft">true</><li>false</li></ul></td></tr>
-            <tr >
-                <td>-n</td><td>Email notification when complete</td><td><ul><li>true</><li class="dft">false</li></ul></td></tr>
-            <tr class="alt">
-                <td>-o</td><td>Review existing logs only</td><td><ul><li>true</><li class="dft">false</li></ul></td></tr>
+                <td>-x</td><td><a href="function.html#server-context" title="See details"><span class="flag">Server Context</span></a></td><td>Application server context</td><td><ul><li class="dft">SASApp94</><li>SASAppUTF8</li></ul></td>
+            </tr>    
             <tr>
-                <td>-p</td><td>Space-delimited List of [path]\\[SAS program name]</td><td></td></tr>
-            <tr class="alt">
-                <td>-r</td><td>Resolve SAS Code</td><td><ul><li>true</><li class="dft">false</li></ul></td></tr>
+                <td>-i</td><td>Interactive</td><td>Display log summary automatically</td><td><ul><li class="dft">true</><li>false</li></ul></td>
+            </tr>
             <tr>
+                <td>-l</td><td><a href="function.html#review-logs" title="See details"><span class="flag">Review logs</span></a></td><td>Include log review post-processing step</a><td><ul><li class="dft">true</><li>false</li></ul></td>
+            </tr>
             <tr>
-                <td>-s</td><td>Server</td><td><ul><li class="dft">sgsasv1.sg.seagen.com</><li>sgsasv1-stg.sg.seagen.com</li></ul></td></tr>
-            <tr class="alt">
-                <td>-u</td><td>Space-delimited list of user to email</td><td><ul><li class="dft">Current user</></ul></td></tr>
-            <tr>     
+                <td>-m</td><td><a href="function.html#record-macros" title="See details"><span class="flag">Record macros</span></a></td><td>Include record macro post-processing step</td><td><ul><li class="dft">true</><li>false</li></ul></td>
+            </tr>
             <tr>
-                <td>-x</td><td>Server Context</td><td><ul><li class="dft">SASApp94</><li>SASAppUTF8</li></ul></td></tr>                       
+                <td>-n</td><td><a href="function.html#notify-on-completion" title="See details"><span class="flag">Notify</span></a></td><td>Send email message on completion</a><td><ul><li>true</><li class="dft">false</li></ul></td>
+            </tr>
+            <tr>
+                <td>-u</td><td>Notification recipients</td><td>Optional space-delimited list of recipients to recieve notification. If not specified, current user is notified</td><td><ul><li class="dft">[don't specify]</li><li>[users] shopkins atellla mness</li></ul></td>
+            </tr>
+            <tr>
+                <td>-r</td><td><a href="function.html#resolve-sas-code" title="See details"><span class="flag">Resolve SAS Code</span></a></td><td>Create stand-alone SAS program without external macro dependencies</a><td><ul><li>true</><li class="dft">false</li></ul></td>
+            </tr>
+            <tr>
+                <td>-c</td><td>.csv file</td><td>.CSV file that lists programs for execution. Include path</td><td>Required if -p is not specified</td>
+            </tr>
+            <tr>
+                <td>-p</td><td>Space-delimited list of programs</td><td>Space-delimited list of program to execute. Include path</td><td>Required if -c is not specified</td>
+            </tr>   
+            <tr>
+                <td>-h</td><td>HTML log summary</td><td>Path\name of the HTML summary file</td><td>required</td>
+            </tr>  
+
+                   
             </tbody>
             </table></div>
 

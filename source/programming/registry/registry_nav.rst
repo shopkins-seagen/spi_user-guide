@@ -1,4 +1,4 @@
-`Home <registry.html>`__ | `Context Menu Library <library.html>`__ | `Add a New Menu <add.html>`__ | `Troubleshooting SAS Menus <checkkey.html>`__ | `SAS Job Manager UAT <uat.html>`__
+`Home <registry.html>`__ | `Context Menu Library <library.html>`__ | `Add a New Menu <add.html>`__ | `Troubleshooting SAS Menus <checkkey.html>`__ 
 
 .. raw:: html 
 

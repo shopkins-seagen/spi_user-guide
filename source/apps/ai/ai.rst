@@ -356,3 +356,7 @@ is missing, the record will be excluded from processing and a warning is generat
            * - Figure
              - Graphic summary of clinical trial data	
       - Common (only applicable values are displayed in the AI Worksheet)      
+    * - Metadata_Report  |ap|
+      - Auto-populated link to the metadata report for an output. Column in added by AIM if it does not already exist. 
+      - link
+      - TLF     

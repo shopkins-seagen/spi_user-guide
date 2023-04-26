@@ -1,243 +1,117 @@
 .. include:: nav.rst
 
-RunSAS Client Interfaces
+Launching SAS Job Manager
 ============================
 RunSAS can be invoked directly by the user from either a a command line interface(CLI) via a.bat file or the a context menu, or by through SAS launcher grahic user
-interface(GUI) application. Both methods call the same 
-executable and can access similar options, though the context menu has a default set of options defined by SPI.
+interface(GUI) application. Before attempting to use the app, install the context menu for SAS Job Manager Package in the `context menu library <http://sgcpapp1/cp/programming/registry/library.html>`__
 
-Command Line Interfaces 
+The application has a dependency on the Windows .NET 6 x64 Desktop Runtime. If you are unable to launch the app because you do not have this 
+installed contact [spi for now].
+
+Context Menus 
 -----------------------------------
+Once context menus are installed `[see initial setup] <sasjobmgr.html#initial-setup>`__, users can right-click on one or more SAS programs or log files and submit in four different ways. Note that all SJM menu items are 
+prefixed with **SJM** to distinguish from RunSAS menu items. The table below details the new right-click context menu items that are available in SJM. If there is need for
+additional context menu selections, contact SPI to provide support.
+
+.. list-table::    
+    :widths: 30 40 30
+    :header-rows: 1
+
+    * - Menu
+      - Description
+      - Default options
+    * - SJM: Submit on Best Server
+      - The application determines which server has more availability using a weighted comparison between prod and stage. For Parallel mode, the app recalculates the best 
+        server between each batch. In sequential mode, the app calculates the best server before submitting each program. There is a small performance cost to use best, so if a 
+        server has a low utilization and the job is small, explicitly selecting a server may be faster.
+      - * Check log
+        * Record macros
+        * Parallel mode
+        * SASApp94 server context
+        * Write HTML summary under [current location]\\run_summaries folder
+    * - SJM: Submit on Prod Server
+      - Submits the programs on the production server. Does not evaluate CPU utilized.
+      - * Check log
+        * Record macros
+        * Parallel mode
+        * SASApp94 server context
+        * Write HTML summary under [current location]\\run_summaries folder    
+    * - SJM: Submit on Stage Server
+      - Submits the programs on the stage server. Does not evaluate CPU utilized.
+      - * Check log
+        * Record macros
+        * Parallel mode
+        * SASApp94 server context
+        * Write HTML summary under [current location]\\run_summaries folder      
+    * - SJM: Open SAS Launcher UI
+      - Open the SAS Launcher UI from the direcotry in which the user launched the application, optionally with one or more selected SAS programs
+      - User has access to modify all the options
+    * - SJM: Review Logs
+      - The application reviews all the selected SAS log files and generates the HTML summary file in the [current location]\\run_summaries folder  
+      - Review logs only
+
 Windows .BAT File CLI
 +++++++++++++++++++++++++++++++++++
-Using a .bat file to call the RunSAS application allows the user to have complete control over all the options without needing to invoke the UI. The parser for
-command line interface accepts options defined in the [options] table. .BAT files, and the corresponding CSV file can be generated from the SAS Launcher. The app uses the 
-selections in the GUI to create an identical .BAT file and a CSV file of the same name containing the selected programs. `Examples <bat.html>`__
+Using a .bat file to call the SJM application allows the user to have complete control over all the options without needing to invoke the UI. The parser for
+command line interface accepts arguments prefixed with a flag `[see flags table <flags.html>`__. .BAT files, and the corresponding CSV file can be generated from the SAS Launcher. The app uses the 
+selections in the GUI to create an identical .BAT file and a CSV file of the same name containing the selected programs. 
 
-Context Menu ('Right-Click') CLI
-++++++++++++++++++++++++++++++++++++++++++++++++
-[coming soon]
+`[.BAT file examles] <bat.html>`__
+`[Command line flags] <flags.html>`__
 
 SAS Launcher GUI
 --------------------------------------------------
-The SAS launcher is invoked by optionally selecting one or more SAS files or just with the cursor focused in a directory that contains SAS files, 
-and selecting **SAS Launcher** from the right-click context menu. The app will automatically determine and display the CPU utilization for each available server and select the 
-best server using a bias algorithm. 
+The SAS launcher is invoked by optionally selecting one or more SAS files or from a directory background that contains SAS files, 
+and selecting **SJM: Open SAS Launcher UI** from the right-click context menu. The UI provides access to all the SJM options without having to create a .BAT file. The 
+figure below details all the controls in the interface. 
 
-.. image:: gui.png
+.. raw:: html 
 
-Functionality and Options
--------------------------------------------------
-Table below describes the functionality available in the CLI (.bat) and GUI (SAS Launcher). To specify and option in the .bat file, pass the value of the option after the 
-command line flag. In the GUI the option is specified through the interface. Most options are available in both, but some are confined to just the CLI or GUI. The 'App available' 
-column in the following table lists which app support each element of functionality.
+    <embed>
+        <style>
+            li a:link{
+            font-weight:bold;
+            margin: 0px 5px 0px;
+            }
+        </style>
 
-.. list-table::
-    :widths: 5 5 5 50 40 5
-    :header-rows: 1
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h5>SAS Launcher UI Controls</h5>
+                    <img src="ui3.png" alt="GUI" height="442" width="501">
+                </div>
+                <div class="col-6">
+                   <h5>Desriptions of the UI Controls for SAS Launcher</h5>
+                    <ol style="font-size: 12px;">
+                        <li>Submits the selected SAS program files</li>
+                        <li>Updates the %CPU utilized labels in UI elment #7</li>
+                        <li>Opens a console window that persists the notification messages displayed during execution.</li>
+                        <li>Open the main page of the SJM user guide.</li>
+                        <li>Sets the location of the SAS program files. The UI only supports a programs from a single folder. Use the .BAT file to run programs in different folders.</li>
+                        <li>Sets the SAS app server to execute the program.<a href="function.html#select-server-and-server-context">[See More]</a></li>
+                        <li>Displays the current amount of CPU the production and Stage servers are using. The radio buttons available as a convenience and have the same functionality as the drop down menu</li>
+                        <li>Sets the server context to use on the selected application server.<a href="function.html#select-server-and-server-context">[See More]</a></li>
+                        <li>Sets run mode for the selected programs<a href="function.html#select-run-mode">[See More]</a></li>
+                        <li>Check the box to review the SAS logs and generate the log summary HTML file<a href="function.html#review-logs">[See More]</a></li>
+                        <li>Check the box to record the external SAS macros compiled during program execution<a href="function.html#record-macros">[See More]</a></li>
+                        <li>Check the box to create stand-alone SAS program files without external macro dependencies for each program included in the run<a href="function.html#resolve-sas-code">[See More]</a></li>
+                        <li>Check the box to recieve an email notification when the jobs completes</li>
+                        <li>Check the box and provide a name for the .bat and .csv file to generate the files based on current selections. Use the <img src="bat-button.png"> button to generate the files without running the programs</li>
+                        <li>Type into the text box to dynamically filter the SAS programs displayed in the list box. Remove the text to clear the filter</li>
+                        <li>Toggles check/uncheck all programs for inclusion</>
+                        <li>Toggles A-Z, Z-A sorting of the programs</li>
+                        <li>Toggle check/uncheck all Is QC program attribute</li>
+                        <li>Check box to include a program in run</>
+                        <li>Check box to indicate the program implements logic to support automated QC results reporting [See details on automating QC]</li>
+                        <li>In sequential run mode, drag and drop programs in the position in the list that corresponds to the sequence they are executed</li>
+                        <li>Updates the list of SAS programs from the file server, in case a program was added or deleted while the app was open</li>
+                    </ol>
+                </div>                
+            </div>
+        </div>
 
-    * - Option 
-      - App available
-      - CLI Flag
-      - Description
-      - Arguments (Default value in **Bold**)
-      - Required
-    * - Run Mode
-      - CLI & GUI
-      - -a	
-      - Boolean that indicates if the programs are submitted sequentially(e.g. program completes before next program starts), or in parallel (e.g. programs 
-        are submitted in batches based on server availability)        
-      -  
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - **true** 
-             - The programs specified for the run are submitted in batches based on CPU utilization. The app queries the amount of CPU available and calculates the 
-               maximum number of programs that can be submitted in parallel. The programs execute asynchronously while the app waits for all the programs in the batch to complete. 
-               Once a batch completes, the app queries available CPU, recalculates batch size, and submits that number of programs in parallel. This cycle continues until all 
-               programs have been executed. The order of execution cannot be enforced, so programs with dependencies on other programs should not be run in this fashion.
-           * - false 
-             - Programs are submitted in the order they are either specified in -p argument, or listed in the -c CSV file. The app waits for each program to complete before 
-               submitting the next program in the sequence.
-      - no
-    * - Select best server
-      - CLI & GUI
-      - b	
-      - Boolean that indicates app chooses server based on CPU availability. There is a small cost in time as the app has to first query each server to get CPU utilization 
-        via a REST API. The GUI always suggests the best server during startup. 
-      -
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - **true** 
-             - compares CPU availability and selects the best server based on selection algorithm
-           * - false 
-             - uses the server specified in -s parameter, or takes the default server defined in app.config
-      - no
-    * - CSV 
-      - CLI
-      - -c	
-      - File name of a CSV file that identifies the list of SAS programs to execute
-      - CSV file with records in the format <full path to SAS program file>,{1|2} (See `Automated QC <qc.html>`__ for more details on using the CSV file)
-      - Required if -p is not specified
-    * - Is Interactive
-      - CLI 
-      - -i	
-      - Boolean that indicates app opens the HTML log summary interactively in a browser upon completion. The GUI defaults to interactive.
-      -  
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - **true** 
-             - opens the log summary in default browser
-           * - false 
-             - does not open the log file. Use for automation or unmonitored runs
-      - no    
-    * - Review logs
-      - CLI & GUI    
-      - -l	
-      - Boolean that indicates if post-processing (e.g. log review) is performed after program are executed.
-      -  
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - **true** 
-             - Scans the logs for occurences of `possible issues <logissues.html>`__ and generates an HTML file summarizing the findings in the run_summary subfolder
-           * - false 
-             - Do not review logs. SLP assumes responsiblity for compliance with program review guidelines. 
-      - no                 
-    * - Record macros
-      - CLI & GUI    
-      - -m	
-      - Boolean that indicates if app records the collects department macros compiled in the SAS environment and writes the records to a database for use in AIM status assignment
-      -  
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - **true** 
-             - captures and records department macros compiled during execution
-           * - false 
-             - Does not capture macros. This is intended for programs not recorded in the Analysis Index file or for special cases determined by SLP.
-      - no   
-    * - Notify on completion
-      - CLI & GUI    
-      - -n	
-      - Boolean that indicates if user is notified via email at the completion of the job. The GUI only sends the notification to the current user.
-      -
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - true
-             - Sends an email message with a run summary to the recipients specfied in -u, or the current user if -u is not specified
-           * - **false** 
-             - Does not send an email message
-      - no  
-    * - Only review logs
-      - CLI    
-      - -o	
-      - Boolean that indicates if the application reviews the SAS log files specified in -p. This parmeter is only if the user is passing SAS logs, not programs, using 
-        the -p flag. This option reviews and summarizes existing SAS logs; it does not submit programs. 
-      -
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - true
-             - Reviews and summarizes the log files specified in -p and generates the HTML summary file. (Does not calculate pass/fail for QC programs)
-           * - **false** 
-             - Treats files specified in -p or -c as SAS programs 
-      - no 
-    * - Programs
-      - CLI & GUI    
-      - -p	
-      - Space-delimited list of SAS programs. Spaces in the paths are not supported for this parameter.If path do have spaces, use -c to specify programs in CSV file. 
-      - Fully qualified list of SAS program files delimited by a spaces
-      - Required if -c is not specified.    
-    * - Resolve SAS Code
-      - CLI & GUI    
-      - -r	
-      - Boolean that indicates if SAS program code is resolved (e.g. no external dependencies or macros) in a corresponding program in 'resolved' subdirectory. 
-        Used to deliver runnable programs to an external recipient without providing infrastructure
-      -
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - true
-             - Creates a corresponding program with resolved code in the 'resolved' subdirectory.
-           * - **false** 
-             - Does not resolve program code.
-      - no 
-    * - SAS application server
-      - CLI & GUI    
-      - -s
-      - Name of server hosting the SAS workspace that will execute the program code. If not specified, the app will either use the default server 
-        defined in the app.config, or if -b is True, the app will determine the best server to use.
-      -
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - sgsasv1.sg.seagen.com
-             - Production server. More performant server when not CPU bound, with locally mounted file share (O: drive)
-           * - sgsasv1-stg.sg.seagen.com
-             - Stage server. Secondary production server that can be used when production is slow or down.        
-      - no              
-    * - Notification recipients 
-      - CLI
-      - -u
-      - Space-delimited list of user accounts to recieve email notifications if -n true. 
-      -
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - **[blank]**
-             - The current user. This is the default for both the GUI and CLI. 
-           * - space-delimited list of accounts. 
-             - Example: -u shopkins atella mness    
-      - no     
-    * - Server context
-      - CLI & GUI    
-      - -x
-      - Name of the application server context to use to create the workspace
-      -
-        .. list-table:: 
-           :widths: 10 30
-           :header-rows: 1
-                        
-           * - Value
-             - Description
-           * - **SASApp94**
-             - Single-byte, WLATIN1 host encoding. 
-           * - SASAppUTF8
-             - Multi-byte, UTF-8 host encoding and support for Simplified Chinese character set.      
-      - no            
 
+    </embed>
 
