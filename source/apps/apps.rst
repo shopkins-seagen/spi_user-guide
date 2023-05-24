@@ -12,6 +12,7 @@ user guides for each of the SPI utilities that fall into this category.
    directoryviewer/directoryviewer 
    headstart/headstart
    almisafe/almisafe
+   mcrbincomp/mcrbincomp
    openfileassistant/openfileassistant
    patpro/patient_profile
    rtfcomp/rtfcomp
@@ -21,3 +22,4 @@ user guides for each of the SPI utilities that fall into this category.
    saslog/saslog
    scheduler/scheduler
    stapler/stapler
+   zip/zip

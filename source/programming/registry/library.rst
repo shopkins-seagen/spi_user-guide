@@ -16,7 +16,7 @@ Context Menu Library
                         <p class="card-text small">View and export access and permissions</p>              
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
-                    <p class="font-weight-bold">Menu</p>
+                    <p class="font-weight-bold">Right-Click Context Menus</p>
                         <p>View user access</p>
                     </div>
                     <div class="small" style="background-color:#DDD9D8;">
@@ -41,7 +41,7 @@ Context Menu Library
                         <p class="card-text small">Disconnect files locked on the file share</p>              
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
-                    <p class="font-weight-bold">Menu</p>
+                    <p class="font-weight-bold">Right-Click Context Menus</p>
                         <p>Open file assistant</p>
                     </div>
                     <div class="small" style="background-color:#DDD9D8;">
@@ -65,7 +65,7 @@ Context Menu Library
                         <p class="card-text small">Create a SAS program file template with standard header</p>              
                     </div>        
                     <div class="small" style="background-color:#DCE6E7;">
-                    <p class="font-weight-bold">Menu</p>
+                    <p class="font-weight-bold">Right-Click Context Menus</p>
                         <p>Create new SAS program w/header</p>
                     </div>
                     <div class="small" style="background-color:#DDD9D8;">
@@ -152,7 +152,7 @@ Context Menu Library
                         <p class="card-text small">Batch submit SAS programs on the production server</p>              
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
-                    <p class="font-weight-bold">Menu</p>
+                    <p class="font-weight-bold">Right-Click Context Menus</p>
                         <p>Submit on Prod</p>
                     </div>
                     <div class="small" style="background-color:#DDD9D8;">
@@ -176,7 +176,7 @@ Context Menu Library
                         <p class="card-text small">Batch submit SAS programs on the stage server</p>              
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
-                    <p class="font-weight-bold">Menu</p>
+                    <p class="font-weight-bold">Right-Click Context Menus</p>
                         <p>Submit on Stage</p>
                     </div>
                     <div class="small" style="background-color:#DDD9D8;">
@@ -201,7 +201,7 @@ Context Menu Library
                     </div>
 
                     <div class="small" style="background-color:#DCE6E7;">
-                        <p class="font-weight-bold">Menu</p>
+                        <p class="font-weight-bold">Right-Click Context Menus</p>
                         <p>Review Log</p>
                     </div>
                     <div class="small" style="background-color:#DDD9D8;">
@@ -220,14 +220,14 @@ Context Menu Library
         </div>    
 
         <div class="row" style="margin-top:10px;">
+
             <div class="col-sm-3">
                 <div class="card h-100">
                     <div class="card-body text-center">
-                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/sasjobmgr.html">SAS Job Manager Package</a></h5>
-                        <p class="card-text small">All context menus for SAS Jobs manager</p>              
+                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/sasjobmgr.html">SAS Job Manager for Stat Programming</a></h5>           
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
-                        <p class="font-weight-bold">Menu</p>
+                        <p class="font-weight-bold">Right-Click Context Menus</p>
                             <ul>
                                 <li>SJM: Submit on Best Server</li>    
                                 <li>SJM: Submit on Prod Server</li>  
@@ -250,7 +250,66 @@ Context Menu Library
                         <button onclick="window.open('sjm.zip')" class="btn btn-sm btn-primary">download</button>
                     </div>
                 </div>
+            </div>      
+
+               <div class="col-sm-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/sasjobmgr.html">SAS Job Manager for CDP and Biostats</a></h5>           
+                    </div>
+                    <div class="small" style="background-color:#DCE6E7;">
+                        <p class="font-weight-bold">Right-Click Context Menus</p>
+                            <ul>
+                                <li>SJM: Submit on Best Server</li>    
+                                <li>SJM: Submit on Prod Server</li>  
+                                <li>SJM: Submit on Stage Server</li>   
+                                <li>SJM: Open SAS Launcher UI</>
+                                <li>SJM: Review Logs</li>  
+                            </ul>
+                    </div>
+                    <div class="small" style="background-color:#DDD9D8;">
+                        <div>
+                            <span class="font-weight-bold">File types</span>
+                            <ul>
+                                <li>SAS program</li>    
+                                <li>SAS Log file</li>  
+                                <li>Directory background</li>    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button onclick="window.open('sjm-cdp.zip')" class="btn btn-sm btn-primary">download</button>
+                    </div>
+                </div>
             </div>               
+
+               <div class="col-sm-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/sasjobmgr.html">SAS Job Manager for DM</a></h5>          
+                    </div>
+                    <div class="small" style="background-color:#DCE6E7;">
+                        <p class="font-weight-bold">Right-Click Context Menus</p>
+                            <ul>  
+                                <li>SJM: Submit on Prod Server</li>  
+                                <li>SJM: Review Logs</li>  
+                            </ul>
+                    </div>
+                    <div class="small" style="background-color:#DDD9D8;">
+                        <div>
+                            <span class="font-weight-bold">File types</span>
+                            <ul>
+                                <li>SAS program</li>    
+                                <li>SAS Log file</li>  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button onclick="window.open('sjm-dm.zip')" class="btn btn-sm btn-primary">download</button>
+                    </div>
+                </div>
+            </div>               
+
         </div>
     
         
