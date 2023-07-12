@@ -18,8 +18,8 @@ user guides for each of the SPI utilities that fall into this category.
    rtfcomp/rtfcomp
    runsas/runsas
    sasjobmgr/sasjobmgr
+   sjm_scheduler/scheduler
    sae/sae   
    saslog/saslog
-   scheduler/scheduler
    stapler/stapler
    zip/zip
