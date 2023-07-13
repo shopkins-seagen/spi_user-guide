@@ -1,4 +1,4 @@
-`Home <scheduler.html>`__ | `BAT file for Automation <batch.html>`__ | `Schedule a Task <ui.html>`__ | `Special Security Folders <blinded.html>`__
+`Home <scheduler.html>`__ | `BAT file for Automation <batch.html>`__ | `Schedule a Task <ui.html>`__ | `Special Security Folders <blinded.html>`__ | `Admin (SPI only) <spi.html>`__
 
 .. |cpu| image:: cpu.png
 .. |close| image:: close.png

@@ -10,31 +10,38 @@
 
 .. |export| image:: export.png
 
+.. |select| image:: select.png
+
 SJM Scheduler UI
 =========================
-The UI provides functionality for users to create, update, or delete a scheduled task. The UI also display a run log that details each time the job was successfully executed. 
-
-Users can export a matrix of tasks by time to their downloads folder using the |export| button. This can be helpful to choose a less busy time to schedule a task. 
-
+The UI provides functionality for users to create, update, or delete a scheduled task. The UI also display a run log that details each time the job was successfully executed. Users can 
+view the currently scheduled jobs by down using the |export| button, which downloads a spreadsheet with a frequency of jobs x day. This can be helpful to choose a less busy time 
+to schedule a task. 
 
 Create a New Scheduled Task
 ----------------------------------
 #. Click the |new| button to display the Create new task menu. 
-#. Enter a description in the format Protocol Identifier_Deliverable_Purpose. Example: SGNXX-001_CSR_Raw data refresh. While this isn't enforced as some elements might note
-   be applicable, it will make the task easier to find.
-#. Select the SJM batch file. For jobs that access special security(SS) folders, the batch file must exist under the folder where the security is applied and the 
-   user must be a member of the AD group that provides access. For default security(DS) jobs, the file can reside at any level in the folder hierarchy and be created by any member of SP.
+#. Enter a description in the format Protocol Identifier_Deliverable_Purpose. Example: *SGNXX-001_CSR_Raw data refresh*. While this isn't enforced as some elements might 
+   not be applicable, it will make the task easier to find later. There is task filter that filters jobs by keystroke as well.
+#. Select the SJM batch file by clicking the |select| button to bring up the file selection dialog. For jobs that access special security(SS) folders, the batch file must exist under 
+   the folder where the security is applied and the user must be a member of the AD group that provides access. For default security(DS) jobs, the file can reside at any 
+   level in the folder hierarchy and be created by any member of SP.
+#. Click the |save| button to add the new job to the database, or |cancel| to discard. Once saved, the app displays the scheduling details for the selected job in the right pane.
+#. By default, the 'Recurring' check box is checked. This indicates the jobs will execute weekly. If this is a one-time job, uncheck 'Recurring?'. This will cause the job 
+   to execute once, then automatically disable itself. To run the job again, enable the job within 7 days prior to scheduled execution. To temporarily disable a job, unchecke the 
+   'Enabled' checkbox.
+#. If the job accesses locations that have special security, check the 'Does the analysis have custom security ACLs' box and select the AD group with modify access     
+   on that location. Only members of the special security group can schedule tasks that access restricted folders. If the AD group needed to access for a job  is not available in 
+   the drop-down menu, contact SPI to register the appropriate group. Since each registered group requires IT to create a corresponding identity, this process can take a while.
+   See `special security <blinded.html>`__ for more details on restricted folders.
+   
+    .. warning::
 
-    .. note::
+      Using default security for a job in a restricted folder will result in an access violation exception. Only locations accessible by SAS_ClinProg_GXP can be scheduled without
+      specifying a security group. 
 
-      For batch files that access restricted folders, the special AD group must have the appropriate level of access to all the custom security folders referenced by the SAS programs
-      (excluding DS folders). For example, if a group accesses a more restricted SS folder, and writes to less restricted SS folder, the group 
-      needs to be applied to both folders through CS-096 request. Contact SPI if you have questions about cases involving more than one level of SS folders within a single job.
-
-#. Click the |save| button to add save the task. This adds the job to the database and displays the scheduling details for the job. The |cancel| button discards a new task prior to saving.
-#. Once |save| is clicked, the schedule details appear in the right pane. Select the day(s) of the week for the job to execute, and select the hour (0-23) to execute the program.
-#. If this is a one-time job, uncheck 'Recurring?'. This will cause the job to execute once, then automatically disable. To run the job again, enable the job within 7 days prior to scheduled 
-   execution. 
+#. Select the day(s) of the week for the job to execute, and select the hour (0-23) to execute the program. Use |export| to view all the jobs if you have a resource intenstive job 
+   to ensure there is sufficient server availabilty.
 #. Once the changes are made, the |changes| indicator is displayed in the upper right. Click |save| in the upper right corner to save the scheduling details. The |cancel| button in the 
    upper right will discard unsaved changes.
 
@@ -44,7 +51,7 @@ Create a New Scheduled Task
 
 Run Logs
 --------------------
-Each time a job is successfully launched, an entry is recorded in the Run Log, and is accessible by selecting the job in the left pane. The application records the start and end times 
+Each time a job is successfully launched, an entry is recorded in the Run Log and is accessible by selecting the job in the left pane. The application records the start and end times 
 for the job, and the worst SAS error condition encountered during the entire job execution. Click a run log to view the SJM application notifications generated during execution.
 
 .. image:: runlog.png

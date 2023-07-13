@@ -2,12 +2,14 @@
 
 SJM Batch File for Automation
 ====================================
-The first step in created a scheduled task is to create or update an SJM batch file to support automation. This requires the addition of a few command line flags to the call.
+The first step in creating a scheduled task is to create or update an SJM batch file to support automation, do not use batch files that call runsas.exe . This requires the 
+addition of a few command line flags to the call to your SJM batch file.
 
-#. Add the -i false flag to turn off the interactive log checker. This still creates the log summary, just prevents the app for opening and displaying the file to the user. This 
+#. Set the -i flag to false to turn off the interactive log checker. This still creates the log summary, it just prevents the app for opening and displaying the file to the user. This 
    should be set on each call within the batch file.
-#. Add the -n true to turn on notifications,  and -u [users] to identify recipients the job was executed. Since this job is executed by a service account on a server, the turning on notifications is 
-   the easiest way to get feedback on jobs status. More than one user can be specified, e.g. -u shopkins atella rnordfors. This can be set on only the last call in the batch file.
+#. Set -n true to turn on notifications,  and specify the recipents to notify that the job was executed using the -u flag. More than one user can be specified, 
+   e.g. -u shopkins atella rnordfors. If there are multiple calls in the batch file, this can be limited to just the last call. Always explicitly define the recipients as the 
+   job executes in the context of a service account.
 
 Example
 --------------
