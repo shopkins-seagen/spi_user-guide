@@ -25,7 +25,7 @@ Production(prod): SGSASV1.sg.seagen.com
 +++++++++++++++++++++++++++++++++++++++++++
 In ideal conditions prod is significantly more performant than stage as it has more cores, RAM, and less I/O(eg. read/write disc operations) time. 
 
-    * 8 CPU cores
+    * 16 CPU cores
     * 200GB RAM 
     * Locally-mounted file server SGSASV1, which hosts the I, O, and U drive aliases
 
@@ -83,6 +83,10 @@ Record Macros
 ++++++++++++++++++++++++++
 By default, the app identifies all the department-level macros compiled in the SAS environment during program execution. AIM uses these records to determine re-test status 
 if a dependent macro was modified after the output was validated. 
+
+.. note:: 
+
+   This functionality is only intended for users within Statistical Programming. DM and Biostats users should set this to false to improve the performance of program execution.
 
 Notify on Completion
 +++++++++++++++++++++++++++
