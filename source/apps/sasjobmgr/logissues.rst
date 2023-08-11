@@ -6,7 +6,7 @@ RunSAS optionally can review the log object of a SAS program file after executio
 identifies occurences of the regular expressions in the table below in each log and generates are summary HTML file. The summary file is created in a run_summaries 
 subfolder. After reviewing a summary, the file can be closed from browser using the X to retain the file, or click the |close| button to close and delete the file. 
 
-Regular Expression  Patterns
+List of Log Issues Detected
 ------------------------------
 .. list-table::
     :widths: 10 90

@@ -1,4 +1,4 @@
-`SJM Home <sasjobmgr.html>`__ | `Options <function.html>`__ | `Command Line Interfaces <interfaces.html>`__ | `SAS Launcher <interfaces.html#sas-launcher-gui>`__ | `.BAT Examples <bat.html>`__ | `CLI Flags  <flags.html>`__ | `UAT Instructions <uat.html>`__ 
+`SJM Home <sasjobmgr.html>`__ | `Context Menus <cli.html>`__ | `GUI <ui.html>`__ | `BAT Files <bat.html>`__ | `Automated QC <qc.html>`__ | `Log Issues <logissues.html>`__
 
 .. |cpu| image:: cpu.png
 .. |close| image:: close.png
