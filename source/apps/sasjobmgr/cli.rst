@@ -1,6 +1,6 @@
 .. include:: nav.rst
 
-Launch SJM from Context Menu 
+Launch SJM from Context Menu (Right-Click)
 ============================================
 Users can install context menus into their registry by downloading and installing the SJM menus from the library described 
 in `initial setup <initial.html>`__

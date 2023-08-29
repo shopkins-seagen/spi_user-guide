@@ -1,4 +1,4 @@
-`SJM Home <sasjobmgr.html>`__ | `Context Menus <cli.html>`__ | `GUI <ui.html>`__ | `BAT Files <bat.html>`__ | `Automated QC <qc.html>`__ | `Log Issues <logissues.html>`__
+`SJM Home <sasjobmgr.html>`__ | `Context Menus <cli.html>`__ | `GUI <ui.html>`__ | `BAT Files <bat.html>`__ | `Automated QC <qc.html>`__ | `CLI Flags <flags.html>`__ | `Log Issues <logissues.html>`__
 
 .. |cpu| image:: cpu.png
 .. |close| image:: close.png

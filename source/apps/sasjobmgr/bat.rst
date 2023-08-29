@@ -5,8 +5,10 @@ Launch SJM from Batch File
 For recurring jobs or final runs, programmers should create .BAT files to manage the execution of the programs. See `create bat files from UI <ui-bat.html>`__ for 
 details on how to create .bat file using the SAS Launcher UI.
 
-A single .bat file can have mulitple calls, though each call creates a separate HTML summary. Starting in v2, user can use the mixed run 
-mode to process files sequentially, and process groups programs without dependencies in parallel.
+A single .bat file can have mulitple calls, though each call creates a separate HTML summary. Starting in v2, the app supports a mixed run 
+mode to process files both sequentially and in parallel using an optional third column in the CSV file.  
+
+The .BAT file exposes all the options available in SJM. See `command line flags <flags.html>`__ for a desription of each option.
 
 Example: Default Call 
 ----------------------------------------------------

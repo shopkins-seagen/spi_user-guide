@@ -3,10 +3,15 @@
 
 Create Batch files
 ========================================
-The UI can be used to generate .BAT and CSV files based on the selection in the form. As of v2.0, users can generate the CSV file based on the AI. The app includes 
+The UI can be used to generate .BAT and CSV files based on the selection in the form. Either select the programs from the UI or use the AI to drive the 
+creation of the CSV file. 
+
+As of v2.0, users can generate the CSV file based on the AI, and optionally enable mixed processing mode using dervie order. The app includes 
 all the programs that exist on the network where SB_Ignore_Record isn't true. The sequence of the programs is derived by adding Derive_Order to the category offset 
 constant. This enforces a sequence by category and allows a place for the QC programs to follow directly after the corresponding primary program category. By default 
-all QC programs are given the same sequence so they execute in parallel. Users can make updates as needed to the order in the CSV file, there is no further dependency 
+all QC programs are given the same sequence so they execute in parallel. 
+
+Users can make updates as needed to the order in the CSV file, there is no further dependency 
 on AI for mixed mode processing once the CSV is created.
 
 .. raw:: html 

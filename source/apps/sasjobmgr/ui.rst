@@ -1,7 +1,7 @@
 
 .. include:: nav.rst
 
-Launch SJM from UI
+Launch SJM from GUI
 ===========================================
 The SAS launcher is invoked by either right-clicking in the directory background or seleted one or more SAS program files, 
 and selecting **SJM: Open SAS Launcher UI** from the right-click context menu. The UI provides access to all the SJM options and provides functionaly to create 
