@@ -66,15 +66,19 @@ to be specified. Hover over the value in Option column to link to additional det
                     <td>.CSV file (path\name) that lists programs for execution. Starting in v2, SJM accepts an optional 3rd position for sequence that enables mixed mode. 
                     <table class="table table-bordered table-dark">
                     <tr><td>Position 1</td><td>Path\program</td><tr>
-                    <tr><td>Position 2</td><td>1 or 2, 1=Primary, 2=QC</td></tr>
+                    <tr><td>Position 2</td><td>1 or 2, 1=Production, 2=QC</td></tr>
                     <tr><td>Position 3</td><td>Sequence</td></tr>
                     </table>                    
                     </td><td>Required if -p is not specified</td>
                 </tr>
                 
                 <tr>
-                    <td>-d</td><td>Use Sequence</td><td>If True, the app uses the optional sequence field in the CSV file to enabled mixed mode post-processing. 
+                    <td>-d</td><td>Use sequence in CSV file for order/run mode</td><td>If True, the app uses the optional sequence field in the CSV file to enabled mixed mode post-processing. 
                      -a must not be false</td>
+                    <td><ul><li class="dft">False</><li>True</li></ul></td>
+                </tr>
+                <tr>
+                    <td>-e</td><td>Export log summary to Excel</td><td>Exports the SAS log findings to an Excel file in the same location as the HTML summary</td>
                     <td><ul><li class="dft">False</><li>True</li></ul></td>
                 </tr>
                 <tr>
@@ -86,7 +90,7 @@ to be specified. Hover over the value in Option column to link to additional det
                 </tr>
                 <tr>
                     <td>-i</td>
-                    <td>Interactive</td>
+                    <td>Open summary and display console messages interactively</td>
                     <td>Opens the HTML summary is the associated browser. User may have associate a browser with an HTML file
                     to get the behavior to work the first time. Should be set to false for .BAT files used in the SJM scheduler</td>
                     <td><ul><li class="dft">true</><li>false</li></ul></td>
