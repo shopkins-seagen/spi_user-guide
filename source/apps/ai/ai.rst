@@ -4,9 +4,9 @@
 Analysis Index
 =========================
 The AI workbook is the user interface for tracking the outputs and datasets for an analysis. Because this file is managed programmatically, it's critical that certain 
-constraints are followed to ensure the data are not corrupted. Do not just modify the version 4 AI and use with the version 5 AIM. 
+constraints are followed to ensure the data are not corrupted. Do not just modify the version 4 AI and use with the version 5+ AIM. 
 
-Use the `migration utility <migrate.html>`__ to move the data from your existing AI and QCI into the v5 AI template, or copy 
+Use the `migration utility <migrate.html>`__ to move the data from your existing AI and QCI into the v5+ AI template, or copy 
 the v5 template `AI template <https://seagen.sharepoint.com/:x:/r/sites/BMInfra/Shared%20Documents/SPI%20Analytical%20Utilities/Analysis%20and%20QC%20Index/templates/analysis_index_v5_0-template.xlsx?d=we8df83e9875c49bbb3f97c0600304bd1&csf=1&web=1>`__
 to your analysis and enter or paste the **VALUES** (not the formats, styles, validation lists from v4) into the workbook. 
 
@@ -57,6 +57,29 @@ is missing, the record will be excluded from processing and a warning is generat
         the column headers, if applicable, in table outputs
       - Any text string. Use macro variables defined in env.sas for special characters
       - TLFs
+    * - Auto_QC_Result |ap|
+      - Displays the result of the comparison test using mcr_spi_qc_compare macro for *OutputName*. If the macro is not called for an output, the field is not populated. This value is not considered in Status assignment.
+      -  
+        .. list-table:: 
+           :widths: 20 75
+           :header-rows: 1
+                        
+           * - Value
+             - Description
+           * - Pass
+             - The output passed the automated QC test in mcr_spi_qc_compare
+           * - Fail
+             - The output failed the automated QC test in mcr_spi_qc_compare
+
+      - Common  
+    * - Auto_QC_Finding |ap|
+      - High-level text description of the category(ies) of comparisons that failed
+      - One or more pipe-delimited text descriptions of the reason(s) for failure
+      - Common     
+    * - Auto_QC_Date |ap|
+      - Datetime of the last call to mcr_spi_qc_compare for the ouptut
+      - DateTime
+      - Common             
     * - Base_Name
       - TLF name without table number
       - Name of the TLF without table number. Ex: t-ae.rtf
@@ -169,8 +192,14 @@ is missing, the record will be excluded from processing and a warning is generat
 
       - Common      
     * - QC_Program  
-      - Hyperlinked name of the QC program, if it exists. The user can specify a program name or allow the app to locate the program if the default naming convention “v-“[program name] is followed.
-      - Program name specified by the user, or auto-populated if the default naming convention is followed.
+      - Hyperlinked name of the QC program, if it exists. The user can specify a program name to force AIM to look for that specific file, or allow the app to locate the program if the default naming convention “v-“[program name] is followed.
+      - Program name specified by the user, or auto-populated if the default naming convention is followed. 
+        
+        .. warning::
+           
+            If you change the program name of an existing record, delete QC_Program if the expectation is for AIM to find the new QC program by naming convention. AIM will 
+            not look for a QC program by convention if an existing value if recorded. 
+
       - Common
     * - QC_Program_Date  |ap|
       - Last modified date of the QC program

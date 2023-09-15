@@ -5,6 +5,10 @@ Automated QC Review
 SJM supports the display of the QC results from automated QC in the HTML summary. The QC program **MUST** use mcrbincomp or equivalent logic to perform comparisons. The macro creates 
 specific messages in the SAS log file SJM uses to generate the QC summary. 
 
+.. warning:: 
+
+    If the NONOTES option is in place the automated QC summary will not function as the notes from mcrbincomp used to evaluate QC status are not captured in the SAS log.
+
 
 Implement mcrbincomp in the Comparison of QC and Production data
 --------------------------------------------------------------------
