@@ -55,6 +55,9 @@ The table below details each action performed by AIM in sequence.
         * Duplicate TLF base names
         * Duplicate dataset names
         * Length of TLF base name > 31 or length of TLF output name > 64
+        * QC Reason recorded as 'First QC' after the output has a record in the DB where QC Status = QC Pass
+        * QC Reason is recorded as 'Other' but Source_or_QC_Comments is not specified
+        * A user-defined QC program, not consistent with the expected naming convention, is recorded, but the file does not exist in the expected location on the network
 
     * - If Final run, update team sign-off and validate user identities
       - * Get a list of unique user ID recorded in the TLF and Dataset worksheet from the developer, tester, spec_author, and spec_reviewer columns
