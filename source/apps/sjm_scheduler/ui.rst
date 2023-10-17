@@ -12,6 +12,7 @@
 
 .. |select| image:: select.png
 
+
 SJM Scheduler UI
 =========================
 The UI provides functionality for users to create, update, or delete a scheduled task. The UI also display a run log that details each time the job was successfully executed. Users can 
@@ -48,6 +49,17 @@ Create a New Scheduled Task
 .. note:: 
 
     You can select a job in the left pane and edit scheduling details at any time. Be sure to disable (uncheck 'Enabled?') or delete jobs that are not active to preserve bandwith. 
+
+Run a Scheduled Task on Demand
+----------------------------------
+The |run| button allows users to send a job for execution on the server using the same configuration as the SJM Scheduler Task Launcher. The job is launched without any
+connection to the user's computer. If the computer that submitted the job is diconnected from the network, the SAS process continues uninterrupted. Notification of completion 
+is provided by using -n true and -u [username(s)] in the .BAT file. The app will display an optional prompt to update the .BAT file with notification arguments if -n is not 
+true or the current user isn't listed in the -u parameter. 
+
+The job runs in the context of the service account associated with security group defined for the job. If no special security group is defined for a job, it runs under the 
+default permissions for O:\\Projects. While only a member of  a special security group can create and scheduled task that references a location under special security folder, 
+any user can submit an existing job without being a member of the group. 
 
 Run Logs
 --------------------

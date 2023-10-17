@@ -136,6 +136,33 @@ Context Menu Library
                     </div>
                 </div>
             </div>
+
+            <div class="col-sm-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/file_attr_editor/index.html">File Attribute Editor</a></h5>
+                        <p class="card-text small">Allows SPI to modify Last modified date for test data generation</p>            
+                    </div>
+                    <div class="small" style="background-color:#DCE6E7;">
+                    <p class="font-weight-bold">Menus</p>
+                    <ul>
+                        <li>Edit file attributes</li>
+                        </ul>
+                    </div>
+                    <div class="small" style="background-color:#DDD9D8;">
+                        <div>
+                            <span class="font-weight-bold">File types</span>
+                            <ul>
+                                <li>All file types (single file)</li>  
+                                <li>Directory background (all files in folder)</li>       
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button onclick="window.open('file_attr_editor.zip')" class="btn btn-sm btn-primary">download</button>
+                    </div>
+                </div>
+            </div>
         </div>    
 
         <div class="row" style="margin-top:10px;">

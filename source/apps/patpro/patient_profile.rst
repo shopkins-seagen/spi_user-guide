@@ -55,7 +55,7 @@ Contents
 `5. Document Version History <#document-version-history>`__ 
 
 1. Overview of the System
----------------------
+--------------------------------
 
 The patient profile generator is a client/server Windows desktop application that leverages the Medidata Rave database via Study Data Specification (SDS) files (or the equivalent thereof for SDTM and/or ADaM data sets) and previous analysis patient profile setup work to facilitate the creation of patient profile reports. The reports produced by this application are subject-level RTF data listings by topic (domain) within each patient, and most often used to inform Safety Monitoring Committee (SMC) reviews, especially on Seagen's Phase 1 trials.
 
@@ -126,7 +126,7 @@ The application is invoked by double-clicking the “patient profile generator�
 Users create a new analysis by clicking the “Create template” -> “New template” menu item and selecting either “From an Excel File” or “From an existing Pat Profile template”.
 
 4.1.1 From an Excel File
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If this is a new protocol, the first step is generally to create a new raw patient profile from a SDS file. This will bring up the “Add New Study” form. Below is an example:
 
@@ -145,7 +145,7 @@ The checkbox “Use the corresponding text variable for uncoded numeric data” 
 Once the selections are made, click Save to write the new analysis to the database.
 
 4.1.2 From an Existing Pat Profile Template
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If the raw metadata for profile has been uploaded and modified to meet the user’s expectations, it is much faster to use those specifications as the starting point for the analysis profiles. It is recommended to use “Raw” template type moving forward but there is no major difference between “Raw” and “Analysis” template type. It is the users’ choice to name their template as “Raw” or “Analysis” and the type will be displayed next to the template (e.g., SMC (RAW)) created under “Select Study” as shown in Figure 3 ). In most cases, the analysis patient profile metadata will be created by coping and updating the raw patient profile metadata. To do this, click “Create template” -> “New template” menu item and select “From an existing Pat Profile template”. This will bring up the form displayed below.
 
@@ -278,7 +278,8 @@ The table below describes each attribute and its effect on the output file.
    |                       |                                                                                                                                                                                                                                                                                  |
    |                       | The subheading will appear of the variables that precede that break row.                                                                                                                                                                                                         |
    +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
+   | Entry Control         | Associates Rave entry controls with a field. Used by the PatientProfile macro to apply the CheckBox format. Set the entry control to *CheckBox* for variables with discrete values of 0 and 1 to apply the 'Use Checkbox Values'                                                 |
+   +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 4.3 Add Dataset Metadata from Outside the Template 
 ---------------------------------------------------
 

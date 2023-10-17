@@ -10,6 +10,7 @@ user guides for each of the SPI utilities that fall into this category.
    ai/aim   
    alm32/alm
    directoryviewer/directoryviewer 
+   file_attr_editor/index
    headstart/headstart
    almisafe/almisafe
    mcrbincomp/mcrbincomp
