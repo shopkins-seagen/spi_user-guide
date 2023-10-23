@@ -9,7 +9,12 @@ addition of a few command line flags to the call to your SJM batch file.
    should be set on each call within the batch file.
 #. Set -n true to turn on notifications,  and specify the recipents to notify that the job was executed using the -u flag. More than one user can be specified, 
    e.g. -u shopkins atella rnordfors. If there are multiple calls in the batch file, this can be limited to just the last call. Always explicitly define the recipients as the 
-   job executes in the context of a service account.
+   job executes in the context of a service account. 
+
+.. note:: 
+
+   To enable on-demand execution, -n must be true and the user attempting to call the service must be listed in the -u parameter.  
+   See `Interactive Submission for more details <interactive.html#interactive-submission-of-a-scheduled-task>`__
 
 Example
 --------------
