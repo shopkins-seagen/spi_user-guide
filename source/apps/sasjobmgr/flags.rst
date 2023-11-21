@@ -1,6 +1,6 @@
 .. include:: nav.rst
 
-Command Line Flags 
+Command Line Parameters
 =======================================
 The table below lists the flags available and the possible values. Default values are indicated in bold font. If a flag has a default, it is optional and does not have 
 to be specified. Hover over the value in Option column to link to additional details if available. 

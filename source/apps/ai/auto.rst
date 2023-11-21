@@ -6,7 +6,7 @@ The Analysis Index Manager Scheduler (AIM Scheduler) allows users to automate ni
 
 Configure AIM for Nightly execution
 ----------------------------------------
-#. Open the application by navigating to I:\\apps_stratus and double-click the AIM Scheduler shortcut 
+#. Open the application by navigating to I:\\apps_stratus and double-click the **AIM Scheduler v5** shortcut 
 #. Use the |select| button to select an AI file for your analysis. 
 #. Use the |add| button to add the AI file to the list of AI files to include in the nightly run
 #. Navigate to the new entry and set the appropriate run time attributes.

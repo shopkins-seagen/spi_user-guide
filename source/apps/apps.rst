@@ -11,8 +11,10 @@ user guides for each of the SPI utilities that fall into this category.
    alm32/alm
    directoryviewer/directoryviewer 
    file_attr_editor/index
+   folder_status_viewer/folder_status_viewer
    headstart/headstart
    almisafe/almisafe
+   macro_guide/macro_guide
    mcrbincomp/mcrbincomp
    openfileassistant/openfileassistant
    patpro/patient_profile
