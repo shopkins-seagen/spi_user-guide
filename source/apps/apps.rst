@@ -24,5 +24,7 @@ user guides for each of the SPI utilities that fall into this category.
    sjm_scheduler/scheduler
    sae/sae   
    saslog/saslog
+   annotator/annotator
    stapler/stapler
+   translator/translator
    zip/zip
