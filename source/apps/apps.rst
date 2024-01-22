@@ -18,8 +18,6 @@ user guides for each of the SPI utilities that fall into this category.
    mcrbincomp/mcrbincomp
    openfileassistant/openfileassistant
    patpro/patient_profile
-   rtfcomp/rtfcomp
-   runsas/runsas
    sasjobmgr/sasjobmgr
    sjm_scheduler/scheduler
    sae/sae   
