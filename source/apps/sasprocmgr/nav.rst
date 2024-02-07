@@ -1,24 +1,6 @@
-`Home <macro_guide.html>`__ | `Manage Library <admin.html>`__ 
+`Home <index.html>`__ |  
 
-.. |addcode| image:: addcode.png
-.. |filteron| image:: filter-on.png
-.. |filteroff| image:: filter-off.png
-.. |expand| image:: expand.png
-.. |copy| image:: copy.png
-.. |preview| image:: preview.png
-.. |ug| image:: ug.png                
-.. |spo| image:: spo.png
-.. |folder| image:: folder.png
-.. |update| image:: update.png    
-.. |add| image:: add.png      
-.. |home| image:: home.png     
-.. |manual| image:: manual.png     
-.. |rowsave| image:: rowsave.png
-.. |rowedit| image:: rowedit.png
-.. |rowcancel| image:: rowcancel.png
-.. |addparm| image:: addparm.png
-.. |delete| image:: delete.png          
-
+.. |close| image:: close.png        
 
 .. raw:: html 
 
