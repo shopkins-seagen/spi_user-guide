@@ -18,9 +18,11 @@ user guides for each of the SPI utilities that fall into this category.
    mcrbincomp/mcrbincomp
    openfileassistant/openfileassistant
    patpro/patient_profile
+   rar/rar_unpack
    sasjobmgr/sasjobmgr
    sjm_scheduler/scheduler
    sae/sae   
+   sasdata_blinding_api/sas_blind_overview
    saslog/saslog
    sasprocmgr/index
    annotator/annotator
