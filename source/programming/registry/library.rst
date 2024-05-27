@@ -12,7 +12,7 @@ Context Menu Library
             <div class="col-sm-3">
                 <div class="card h-100">
                     <div class="card-body text-center">
-                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/directoryviewer/directoryviewer.html">Access Viewer</a></h5>
+                        <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/directoryviewer/directoryviewer.html#directory-access-viewer">Access Viewer</a></h5>
                         <p class="card-text small">View and export access and permissions</p>              
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
@@ -37,7 +37,7 @@ Context Menu Library
             <div class="col-sm-3">
                 <div class="card h-100">
                     <div class="card-body text-center">
-                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/openfileassistant/openfileassistant.html">Open File Assistant</a></h5>
+                        <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/openfileassistant/openfileassistant.html">Open File Assistant</a></h5>
                         <p class="card-text small">Disconnect files locked on the file share</p>              
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
@@ -61,7 +61,7 @@ Context Menu Library
             <div class="col-sm-3">
                 <div class="card h-100">
                     <div class="card-body text-center">
-                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/headstart/headstart.html">SAS HeadSTART</a></h5>
+                        <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/headstart/headstart.html">SAS HeadSTART</a></h5>
                         <p class="card-text small">Create a SAS program file template with standard header</p>              
                     </div>        
                     <div class="small" style="background-color:#DCE6E7;">
@@ -140,7 +140,7 @@ Context Menu Library
             <div class="col-sm-3">
                 <div class="card h-100">
                     <div class="card-body text-center">
-                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/file_attr_editor/index.html">File Attribute Editor</a></h5>
+                        <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/file_attr_editor/index.html">File Attribute Editor</a></h5>
                         <p class="card-text small">Allows SPI to modify Last modified date for test data generation</p>            
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
@@ -170,7 +170,7 @@ Context Menu Library
             <div class="col-sm-3">
                 <div class="card h-100">
                     <div class="card-body text-center">
-                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/sasjobmgr.html">SAS Job Manager for Stat Programming</a></h5>           
+                        <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/sasjobmgr/sasjobmgr.html">SAS Job Manager for Stat Programming</a></h5>           
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
                         <p class="font-weight-bold">Right-Click Context Menus</p>
@@ -202,7 +202,7 @@ Context Menu Library
                <div class="col-sm-3">
                 <div class="card h-100">
                     <div class="card-body text-center">
-                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/sasjobmgr.html">SAS Job Manager for CDP and Biostats</a></h5>           
+                        <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/sasjobmgr/sasjobmgr.html">SAS Job Manager for CDP and Biostats</a></h5>           
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
                         <p class="font-weight-bold">Right-Click Context Menus</p>
@@ -233,7 +233,7 @@ Context Menu Library
                <div class="col-sm-3">
                 <div class="card h-100">
                     <div class="card-body text-center">
-                        <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/sasjobmgr.html">SAS Job Manager for DM</a></h5>          
+                        <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/sasjobmgr/sasjobmgr.html#sas-job-manager">SAS Job Manager for DM</a></h5>          
                     </div>
                     <div class="small" style="background-color:#DCE6E7;">
                         <p class="font-weight-bold">Right-Click Context Menus</p>
@@ -255,10 +255,35 @@ Context Menu Library
                         <button onclick="window.open('sjm-dm.zip')" class="btn btn-sm btn-primary">download</button>
                     </div>
                 </div>
-            </div>               
-
+            </div>         
         </div>
-    
         
-
+        <div class="row" style="margin-top:10px;">
+                   <div class="col-sm-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/sae/sae.html">SAE Recon App</a></h5>          
+                    </div>
+                    <div class="small" style="background-color:#DCE6E7;">
+                        <p class="font-weight-bold">Right-Click Context Menus</p>
+                            <ul>  
+                                <li>SAE: Generate Report</li>  
+                                <li>SAE: Upload Results</li>  
+                            </ul>
+                    </div>
+                    <div class="small" style="background-color:#DDD9D8;">
+                        <div>
+                            <span class="font-weight-bold">File types</span>
+                            <ul>
+                                <li>SAS Dataset (casedata) </li>    
+                                <li>Excel file (SAE report)</li>  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button onclick="window.open('sae.zip')" class="btn btn-sm btn-primary">download</button>
+                    </div>
+                </div>
+            </div>   
+        </div>
     </embed>

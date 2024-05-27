@@ -1,5 +1,7 @@
 `Home <registry.html>`__ | `Context Menu Library <library.html>`__ | `Add a New Menu <add.html>`__ | `Troubleshooting SAS Menus <checkkey.html>`__ 
 
+.. |success| image:: success.png
+
 .. raw:: html 
 
     <embed>

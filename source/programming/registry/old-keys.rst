@@ -1,7 +1,7 @@
  <div class="col-sm-3">
                     <div class="card h-100">
                         <div class="card-body text-center">
-                            <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/interfaces.html#context-menu-right-click-cli">SAS Job Manager CLI (best)</a></h5>
+                            <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/sasjobmgr/cli.html#launch-sjm-from-context-menu-right-click">SAS Job Manager CLI (best)</a></h5>
                             <p class="card-text small">Submit SAS program(s) in batch on the on the most available server</p>              
                         </div>
                         <div class="small" style="background-color:#DCE6E7;">
@@ -26,7 +26,7 @@
                 <div class="col-sm-3">
                     <div class="card h-100">
                         <div class="card-body text-center">
-                            <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/interfaces.html#context-menu-right-click-cli">SAS Job Manager CLI (prod)</a></h5>
+                            <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/sasjobmgr/cli.html#launch-sjm-from-context-menu-right-click">SAS Job Manager CLI (prod)</a></h5>
                             <p class="card-text small">Submit SAS program(s) in batch on the production server</p>              
                         </div>
                         <div class="small" style="background-color:#DCE6E7;">
@@ -50,7 +50,7 @@
                 <div class="col-sm-3">
                     <div class="card h-100">
                         <div class="card-body text-center">
-                            <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/interfaces.html#context-menu-right-click-cli">SAS Job Manager CLI (stage)</a></h5>
+                            <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/sasjobmgr/cli.html#launch-sjm-from-context-menu-right-click">SAS Job Manager CLI (stage)</a></h5>
                             <p class="card-text small">Submit SAS program(s) in batch on the stage server</p>              
                         </div>
                         <div class="small" style="background-color:#DCE6E7;">
@@ -76,7 +76,7 @@
                 <div class="col-sm-3">
                     <div class="card h-100">
                         <div class="card-body text-center">
-                            <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/interfaces.html#sas-launcher-gui">SAS Launcher</a></h5>
+                            <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/sasjobmgr/ui.html#launch-sjm-from-gui">SAS Launcher</a></h5>
                             <p class="card-text small">Open the SAS Laucher UI Application</p>              
                         </div>
                         <div class="small" style="background-color:#DCE6E7;">
@@ -101,7 +101,7 @@
                 <div class="col-sm-3">
                     <div class="card h-100">
                         <div class="card-body text-center">
-                            <h5 class="card-title"><a href="http://sgcpapp1/cp/apps/sasjobmgr/sasjobmgr.html">SAS Job Manager Log Reviewer</a></h5>
+                            <h5 class="card-title"><a href="https://sgcpapp1:7011/apps/sasjobmgr/logissues.html#sas-log-reviewer">SAS Job Manager Log Reviewer</a></h5>
                             <p class="card-text small">Review SAS log file(s) and generate HTML summary</p>              
                         </div>
                         <div class="small" style="background-color:#DCE6E7;">

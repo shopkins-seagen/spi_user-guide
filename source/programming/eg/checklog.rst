@@ -16,7 +16,7 @@ Configure the Log Checker for Enterprise Guide
 
 Seagen Criteria
 -------------------------
-`RunSAS documentation <http://sgcpapp1/cp/apps/runsas/runsas.html#types-of-errors>`__
+`SJM documentation <https://sgcpapp1:7011/apps/sasjobmgr/logissues.html#list-of-log-issues-detected>`__
 
 .. list-table::        
     :widths: 20 20 80

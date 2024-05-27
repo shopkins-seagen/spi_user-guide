@@ -35,7 +35,7 @@ If there is at least 1 QC program included in a run, the application generates t
 counts of the total number of tests passed // total number of tests. Total tests can exceed the number of programs as a single program may have multiple calls 
 to the compare macro, each of which if 1 test. 
 
-Below that, the tal number of programs that passes and failed are summarized and displayed in filter buttons. Click the Failed button and the summary will filter 
+Below that, the total number of programs that passes and failed are summarized and displayed in filter buttons. Click the Failed button and the summary will filter 
 just the programs that have failing tests. 
 
 In the Log Summary table, the number of passes/tests by program is listed in the Auto QC columns. The drop down menu in the Auto QC column header 

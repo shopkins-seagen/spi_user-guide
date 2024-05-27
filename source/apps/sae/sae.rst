@@ -12,6 +12,6 @@ and corresponding records with differences in the values of critical variables a
    :maxdepth: 2
 
    Protocol Configuration <configure>
-   Reconcile SAEs between Rave and Argus <run>
+   Reconcile SAEs between Rave and Argus <cli>
    The SAE Report design <report>
    

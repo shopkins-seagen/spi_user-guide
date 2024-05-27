@@ -1,6 +1,8 @@
 `Home <index.html>`__ |  
 
-.. |close| image:: close.png        
+.. |close| image:: close.png  
+.. |run| image:: run.png      
+.. |kill| image:: kill.png          
 
 .. raw:: html 
 

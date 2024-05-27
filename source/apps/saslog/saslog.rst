@@ -2,7 +2,7 @@
 
 SAS Log Report Generator
 ================================
-The SAS Log Report Generator is a .NET Core API that reviews SAS log files for occurrences of issues in the same manner as `RunSAS <http://sgcpapp1/cp/apps/runsas/runsas.html#types-of-errors>`__ , 
+The SAS Log Report Generator is a .NET Core API that reviews SAS log files for occurrences of issues in the same manner as `SAS Job Manager <https://sgcpapp1:7011/apps/sasjobmgr/logissues.html#list-of-log-issues-detected>`__ , 
 and records the findings in an Excel workbook. The macro can be set up to review logs from one or more folders in an analysis. The Excel file contains columns that can be used to record 
 details about log issues, if then cannot be removed from source programs. The adjudications remain associated with issue in the report when the app is re-run. 
 

@@ -44,7 +44,7 @@ Configure a new Protocol
         
         "Folder", "Description", "Standard Path"
         "Clinical data","Location of the Rave datasets","O:\\Data Management\\[product]\\[protocol]\\Data and Programs\\Data\\ALL_DATA"
-        "Safey data","Location of the Argus datasets","K:\\Biometrics\\~GSDB\\ae_recon\\[protocol]"
+        "Safey data","Location of the Argus datasets","O:\\Data Management\\ae_recon\\data\\derived\\[protocol]"
         "Report","Location to write reconciliation report","O:\\Data Management\\[product]\\[protocol]\\Data and Programs\\Data\\Programs\\WORK\\SAE_RECON\\OUTPUT"
         "Log","Location to write SAS log file","O:\\Data Management\\[product]\\[protocol]\\Data and Programs\\Data\\Programs\\WORK\\SAE_RECON\\LOGS"
         "Output data","Location to write the Safety data as XLSX file","O:\\Data Management\\[product]\\[protocol]\\Data and Programs\\Data\\ARCHIVE\\SAE_RECON"

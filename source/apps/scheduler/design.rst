@@ -31,7 +31,7 @@ The table below describes the keys defined in the configuration file
     - ^([\\w-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([\\w-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$
     - C# regular expression used to validate email recipients
   * - helpUrl
-    - http://sgcpapp1/automation/
+    - https://sgcpapp1:7011/apps/sjm_scheduler/scheduler.html
     - Link to the user guide website
   * - pub
     - U:\\Regulated_Pub\\GSDB\Automation

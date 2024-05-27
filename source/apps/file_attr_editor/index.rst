@@ -11,7 +11,7 @@ current values.
 Useage
 ---------------------
 #. Be a member of SAS_Infrastructure_Write
-#. Download and install the Context Menu **File Attribute Editor** from the `context menu library <http://sgcpapp1/cp/programming/registry/library.html>`__
+#. Download and install the Context Menu **File Attribute Editor** from the `context menu library <https://sgcpapp1:7011/programming/registry/library.html#context-menu-library>`__
 #. Invoke the applcation from the context menu:
 
   * Right-Click on a file to edit a single file and select *Edit file attributes* 

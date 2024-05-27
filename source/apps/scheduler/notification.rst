@@ -33,6 +33,6 @@ Notification message
 The notification message is sent to all the recipients defined in the notification. The message itself consists of the 
 
 * Subject - [Job name] [started date/time] [most severe log finding detected in all the programs]
-* Link to the SAS summary. This is very similar to the html summary created from `RunSAS <http://sgcpapp1/cp/apps/runsas/runsas.html#summary-log>`__
+* Link to the SAS summary. 
 * Any message defined in the Content field in the email
 * A list of any issues encountered during the execution of the automation (outside of the SAS logs)

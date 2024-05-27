@@ -29,5 +29,5 @@ Instructions
 
         [{"msgType":1,"msg":"AI and QCI migrated into v5 AI 'O:\\Projects\\Training\\aim\\v4_3\\production\\utilities\\ai\\analysis_index_csr_1643_v5.xlsx'","method":"Ai.Migrate"}]
 
-#. Create a SAS program to call AIM v5 (AIM v5 is not called via right-click). See instructions `here <http://sgcpapp1/cp/apps/ai/run.html#launch-aim-from-sas.html>`__ . AIM v5 
+#. Create a SAS program to call AIM v5 (AIM v5 is not called via right-click). See instructions `here <https://sgcpapp1:7011/apps/ai/run.html#launch-aim-from-sas>`__ . AIM v5 
    will update the derived columns as appropriate. 

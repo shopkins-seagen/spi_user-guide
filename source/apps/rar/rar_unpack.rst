@@ -2,8 +2,8 @@
 
 RAR Archive Unpacker
 ========================================
-The SAS macro provides and interface to the ASP .NET Core API responsible for unpacking encrypted .rar files, and conditionally translating the unpacked file 
-names into English if Simplified Chinese characters are detected. 
+The RAR Archive Unpacker provides functionality to unpack the files in a RAR archive to the network and optionally translate the unpacked file names into English. The system consists of a 
+SAS macro, mcr_spi_rar_unpacker, that calls an ASP .NET Core API that performs the unpacking and translation services. 
 
 Macro Parameters
 -------------------------------------------
@@ -62,7 +62,7 @@ Macro Parameters
            * - Value
              - Description
            * - **N**
-             - disables debuggin mode
+             - disables debugging mode
            * - Y
              - enables debugging mode                            
 

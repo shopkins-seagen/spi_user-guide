@@ -27,5 +27,8 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+html_css_files = [
+    'custom.css',
+]
 html_theme = 'sphinx_nefertiti'
 html_static_path = ['_static']

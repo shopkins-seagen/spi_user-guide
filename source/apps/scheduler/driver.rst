@@ -46,9 +46,8 @@ consists of two columns
 
 .. note:: 
 
-    A QC program is a program that calls mcrBinComp to perform comparisons between datasets. Alternatively, the user can create their own QC algorithm, but 
-    the return values and log notifications must match those of `mcrBinComp <http://sgcpapp1/cp/macros/mcrbincomp/mcrbincomp.html>`__. If program does not call 
-    mcrBinComp or a custom utility that implements mcrBinComp's behaviors, then it is not a QC program from an automation perspective. Designating a program 
+    A QC program is a program that calls mcrBinComp to perform comparisons between datasets. If program does not call 
+    mcr_spi_qc_compare or a custom utility that implements that macro's behaviors, then it is not a QC program from an automation perspective. Designating a program 
     as a QC program in the driver file when that program does not implement the required behavior will result in the QC status assigned *Fail* in the run summary. 
 
 Example driver file: 

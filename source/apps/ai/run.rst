@@ -32,7 +32,7 @@ into that program after %include "init.sas";. Modify the arguments as appropriat
 .. warning::
 
    Do not place the macro call in init_supp.sas. This will crash the SAS Application server. As a general rule, don't put any macro calls directly into init_supp.sas without approval from 
-   the study lead programmer. See the init_supp.sas `user guide <http://sgcpapp1/cp/programming/environment.html#init-supp-sas>`__ for guidance on content of init_supp.sas if you have questions.
+   the study lead programmer. See the init_supp.sas `user guide <https://sgcpapp1:7011/programming/environment.html#init-supp-sas>`__ for guidance on content of init_supp.sas if you have questions.
 
 Keyword Parameters
 --------------------------
@@ -102,5 +102,24 @@ The keyword parameters for mcr_spi_run_aim are described in the following table.
             * - N
               - Do not execute the final run activities 
 
-      - Y         
+      - Y     
+    * - create_lot_yn 
+      - Boolean to indicate if the app creates the List of Tables spreadsheet in the \\ai\\lot subfolder. LoT is used by Pfizer for DID. Nightly scheduled AIM jobs always create LoT. 
+
+        * Update the Team Sign-off page
+        * Validate the values of user identity recorded in the developer, tester, and spec author/reviewer columns. 
+
+      - 
+        .. list-table::
+            :widths: 20 75
+            :header-rows: 1
+                  
+            * - Value
+              - Description
+            * - Y
+              - Create the LoT spreadsheet
+            * - N
+              - Do not create the LoT spreadsheet
+
+      - N            
     

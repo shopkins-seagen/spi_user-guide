@@ -276,11 +276,11 @@ is missing, the record will be excluded from processing and a warning is generat
       - Datasets
     * - Section_Number	
       - Required for the TLF stapler application, otherwise not used by AIM. Section number the TLF belongs in the concatenated PDF submission file
-      - `See TLF Stapler User Guide <http://sgcpapp1/cp/apps/stapler/stapler.html#analysis-index-prerequisite-columns>`__
+      - `See TLF Stapler User Guide <https://sgcpapp1:7011/apps/stapler/stapler.html#analysis-index-prerequisite-columns>`__
       - TLFs
     * - Section_Name
       - Required for the TLF stapler application, otherwise not used by AIM. Section name the TLF belongs in the concatenated PDF submission file
-      - `See TLF Stapler User Guide <http://sgcpapp1/cp/apps/stapler/stapler.html#analysis-index-prerequisite-columns>`__
+      - `See TLF Stapler User Guide <https://sgcpapp1:7011/apps/stapler/stapler.html#analysis-index-prerequisite-columns>`__
       - TLFs            
     * - Shell_ID
       - Contains the shell ID reference to the TLF Shell file.  A same shell ID may be used by multiple outputs.
