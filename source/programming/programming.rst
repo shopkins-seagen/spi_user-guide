@@ -2,7 +2,7 @@ Statistical Programming
 ====================================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
 
     environment
     did/index

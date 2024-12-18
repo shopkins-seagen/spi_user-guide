@@ -9,7 +9,7 @@ See `installing context menus <https://sgcpapp1:7011/programming/registry/add.ht
 
 Generate the report
 --------------------------------
-Generation of the SAE report is no longer done through the GUI desktop app. Use the context menus to call a hosted service to perform the report generation. 
+Generation of the SAE report is no longer done through the SAE Recon Tool/GUI desktop app. Use the context menus to call a hosted service to perform the report generation. 
 
 #. Navigate to the folder that contains the Argus safety data for your protocol. This can be found in *O:\\Data Management\\ae_recon\\data\\derived\\[protocol]*. 
 #. Right-click on the casedata.sas7bdat file and select **SAE: Generate Report**. 
@@ -17,7 +17,8 @@ Generation of the SAE report is no longer done through the GUI desktop app. Use 
 
 Upload the Results
 ---------------------------
-After the reports are adjudicated per DM SOP [?]. Upload the results to the database.
+After the output/report is adjudicated per BP-0389 Serious Adverse Events Reconciliation, 
+upload the output/results to the database.  This will bring forward comments for next rune.
 
 #. Navigate to the folder that contains the report.
 #. Right-click on the Excel file and select **SAE: Upload Results**

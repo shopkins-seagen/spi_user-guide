@@ -20,6 +20,8 @@ The Pfizer DID reference materials for Study Programmers can be found in the fol
     Create and Upload LoT <lot>
     Complete Daily Survey <survey>
     Deliverable Completion <complete>
+    Pfizer DID Team notifications <fsp>
+    FAQ <faq>
 
 
 Workflow for DID lifecycle

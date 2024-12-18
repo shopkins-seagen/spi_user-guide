@@ -121,5 +121,13 @@ The keyword parameters for mcr_spi_run_aim are described in the following table.
             * - N
               - Do not create the LoT spreadsheet
 
-      - N            
+      - N           
+    * - pfe_did
+      - Pfizer study id used to name the LoT file. 
+      - Find your Pfizer study ID here: `L-Seagen -> Pfizer Mapping document <https://seagen.sharepoint.com/:x:/r/sites/StatProg/_layouts/15/Doc.aspx?sourcedoc=%7bF25E609F-1E1B-4F3A-AE4E-09CFAE96D0EF%7d&file=seagen-pfizer-study-ids.xlsx&action=default&mobileredirect=true&web=1>`__
+      - &PROJECT.     
+    * - did_n
+      - Integer that corresponds to the DID_N suffix for the deliverable.
+      - Deliverables are distinguished in DID by an incremetal integer suffix. specify the suffix that matches the DID_0 deliverable name. 
+      - 1         
     

@@ -13,12 +13,23 @@ second deliverable would be PFE1234_2.
 
 Timelines
 ----------------------------
-Only deliverables planned within 1 year are captured in DID, but if there are interim deliverables for that analysis, then use DID to track those. The most common example is 
-CSR. If the CSR delivery of TLFs and datasets is > 1 year, but the study team will be delivering SDTM or ADaM prior to that, record the deliverable for the CSR, but select 
-the delivery content to match the scope of the outputs (e.g. Only SDTM, Only ADaM, Only TLFs).
+While there are no timeline constraints for recording studies, when entering deliverables into DID, timelines need to be carefully considered and planned. 
 
-If the deliverable is > 90 days out, but programmers will be actively working on the deliverable and tracking the work in the daily survey, request an exception for the 
-resource use beyond 90 days prior to planned delivery. See `How to request exception to start hands-on gt 90 days.mp4 <https://pfizer.sharepoint.com/:v:/r/sites/SPAaccelerator/Repository/Pfizer_vendors/07 How to request exception to start hands-on gt 90 days.mp4?csf=1&web=1&e=VOOx80>`__
+* Delivery timeline is more than 1 year away: don't enter them into DID. 
+* Delivery timeline is within 1 year: enter them into DID. 
+
+.. note::
+
+    * Timeline is within 90 days: daily survey is required and programmers must complete their daily survey.
+    * Timeline is between 90 days to 6 months: Daily survey is not required. However, SLP may request an exception for resource use in this time frame. See the training video See `How to request exception to start hands-on > 90 days.mp4 <https://pfizer.sharepoint.com/:v:/r/sites/SPAaccelerator/Repository/Pfizer_vendors/07%20How%20to%20request%20exception%20to%20start%20hands-on%20gt%2090%20days.mp4?csf=1&web=1&e=9v5DPV>`__
+    * Timeline is between 6 months and 1 year: Programmers cannot enter daily survey. 
+
+Note that for any analysis, e.g., a primary analysis (PA), with the final delivery timeline greater than 90 days 
+especially greater than 6 months away, if programmers are actively working on the analysis, SLP may consider creating 
+short-term (within 90 days) deliverables which should be subsets of the final deliverable. For example, if a PA CSR delivery is more than 6 
+months away, but the study team will be delivering SDTM within 90 days, create the SDTM deliverable for the CSR and select the delivery content to be Only SDTM. 
+Similarly, the study team may create another short-term deliverable for Only ADaM or Only TLFs as needed. A single CSR could have additional multiple 
+smaller deliverables, each with a different subset of the CSR content.
 
 Steps to Create a Deliverable in DID
 ----------------------------------------------
